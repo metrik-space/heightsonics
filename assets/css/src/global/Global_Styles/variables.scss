@@ -1,0 +1,83 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+/// @type List
+$text-font-stack: "Open Sans", "Helvetica Neue Light", "Helvetica Neue",
+  "Helvetica", "Arial", sans-serif !default;
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
+  "Monaco", monospace !default;
+
+//////////////////////////////////////////////////////////
+/////// COLOURS
+// Primary colour
+$primary-white: #faf9f9;
+
+//secondary-colour
+$primary-col: #203D7F;
+
+//background-colour
+$background-colour: #100010;
+
+//black-text
+$black-text: #faf9f9;
+
+$color-white: #fff;
+
+$color-black: #1F1F1F;
+
+//////////////////////////////////////////////////////////
+/////// PADDING
+
+$small-padding: 0.3125rem;
+
+$medium-padding: 0.625rem;
+
+$large-padding: 0.9375rem;
+
+//////////////////////////////////////////////////////////
+/////// FONTS
+
+$hero-text: 10rem;
+
+$section-heading: 6rem;
+
+$section-content: 2rem;
+
+$button-large: 2rem;
+
+$menu-item: 1.25rem;
+
+$primary-text: 0.9375rem;
+
+//////////////////////////////////////////////////////////
+//// SECTION MARGINS
+
+$section-margin: 18rem;
+
+//////////////////////////////////////////////////////////
+/// BORDERS
+
+$border-1px: 1px solid $primary-col;
+
+$border-2px: 2px solid $primary-col;
+
+$form-border: 4px solid $primary-col;
+
+//////////////////////////////////////////////////////////
+/////BORDER-RADIUS
+
+$border-radius: 4px;
+
+//////////////////////////////////////////////////////////
+/// ANIMATIONS
+
+$animation: all 0.4s;
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1650px !default;

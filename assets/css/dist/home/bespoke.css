@@ -1,0 +1,15 @@
+.bespoke { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 7.5rem; }
+
+.bespoke__container { max-width: 1536px; /* 1 */ margin-left: auto; /* 2 */ margin-right: auto; /* 2 */ width: 70%; /* 1 */ }
+
+.bespoke h1 { padding-top: 5rem; margin-bottom: 2.5rem; font-style: normal; font-weight: normal; font-size: 49px; line-height: 120%; text-align: center; }
+
+.bespoke h2 { margin-bottom: 1.5rem; font-style: normal; font-weight: normal; font-size: 25px; line-height: 120%; text-align: center; }
+
+.bespoke__subtitle { font-size: 25px; line-height: 120%; font-style: normal; font-weight: normal; margin-top: 3.5rem; }
+
+.bespoke p { font-size: 20px; line-height: 120%; font-family: sans-serif; margin-top: 2rem; font-style: normal; font-weight: normal; }
+
+.bespoke__img { width: 100%; height: auto; margin: 5rem 0; }
+
+/*# sourceMappingURL=bespoke.css.map */

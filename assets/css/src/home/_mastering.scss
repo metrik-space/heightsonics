@@ -1,0 +1,278 @@
+.mastering {
+    display: flex;
+    flex-direction: column;
+    margin-top: calc(100vh - 92px);
+    width: 100%;
+    position: relative;
+    height: auto;
+    
+    &__container {
+        max-width: 1300px; /* 1 */
+        margin-left: auto; /* 2 */
+        margin-right: auto; /* 2 */
+        width: 70%; /* 1 */
+
+        @include respond(tab-land) {
+          width: 80%;
+        }
+
+        @include respond(tab-port) {
+          width: 90%;
+        }
+    }
+
+    h1 {
+        margin-bottom: 1.5rem;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 42px;
+        line-height: 120%;
+    
+        @include respond(tab-port) {
+          font-size: 34px;
+          line-height: 120%;
+        }
+      }
+    
+      h2 {
+        margin-bottom: 1.5rem;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 120%;
+    
+        @include respond(tab-port) {
+          font-size: 22px;
+          line-height: 120%;
+        }
+      }
+    
+      p {
+        font-style: normal;
+        font-family: Montserrat;
+        font-size: 20px;
+        line-height: 120%;
+
+        @include respond(tab-port) {
+          font-size: 14px;
+          line-height: 120%;
+        }
+      }
+
+    &__about {
+        width: 100%;
+        height: 750px;
+        display: flex;
+        z-index: 999999;
+        position: relative;
+
+        &__left {
+            width: 65%;
+            background-color: $color-black;
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            flex-direction: column;
+
+            &__content {
+                max-width: 625px;
+                width: 60%;
+                margin-right: 25%;
+            }
+        }
+
+        &__right {
+            width: 35%;
+            background-color: transparent;
+            height: 100%;
+            position: relative;
+
+            &__image {
+                position: absolute;
+                height: 850px;
+                max-height: 75%;
+                width: auto;
+                top: 50%; 
+                right: 80%;
+                transform: translate(50%,-50%);
+                z-index: 9999999;
+            }
+        }
+    }
+
+    &__testi {
+        background-color: $color-white;
+        color: $color-black;
+        position: relative;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 999999;
+        width: 100%;
+        position: relative;
+        
+
+        h1 {
+          color: $color-black;
+          text-align: center;
+          margin-bottom: 4rem;
+        }
+
+        p {
+          text-align: center;
+          margin-bottom: 1rem;
+        }
+
+        b {
+          font-style: bold;
+          font-family: Montserrat;
+          font-size: 18px;
+          line-height: 120%;
+          text-align: center;
+  
+          @include respond(tab-port) {
+            font-size: 14px;
+            line-height: 120%;
+          }
+        }
+
+
+        &__items {
+
+          &__item {
+            padding: 3rem;
+            border: 1px solid $color-black;
+            display: flex;
+            flex-direction: column;
+            z-index: 999999;
+            position: relative;
+            width: 375px;
+          
+          }
+        }
+    }
+
+    &__contact {
+      color: $color-black;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      height: 850px;
+      
+      
+
+      h1 {
+        color: $color-black;
+        text-align: center;
+        margin-bottom: 2.5rem;
+      }
+
+      p {
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+
+
+
+      &__form {
+        width: 800px;
+        z-index: 999999;
+        position: relative;
+
+        &__group {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+        }
+
+        &__input {
+          display: flex;
+          flex-direction: column;
+          width: 55%;
+          max-width: 550px;
+
+          label {
+            font-style: normal;
+            font-family: Montserrat;
+            font-size: 22px;
+            line-height: 120%;
+            margin-bottom: 5px;
+    
+            @include respond(tab-port) {
+              font-size: 16px;
+              line-height: 120%;
+            }
+          
+          }
+
+
+          input {
+            border: 1px solid #0c0d10d4;
+            padding: 10px;
+            font-style: normal;
+            font-family: Montserrat;
+            font-size: 20px;
+            line-height: 120%;
+            margin-bottom: 2rem;
+            background: transparent;
+            color: #fff;
+
+            &:focus {
+              outline: none;
+              box-shadow: 0 1rem 2rem rgba(#6a4a4aa1, 0.1);
+              background: #000000a1;
+            }
+            
+            &::placeholder {
+              color: $color-black;
+            }
+
+            &:not(:placeholder-shown) {
+              background: #000000a1;
+            }
+
+            @include respond(tab-port) {
+              font-size: 14px;
+              line-height: 120%;
+            }
+          }
+
+          textarea {
+            padding: 10px;
+            font-style: normal;
+            font-family: Montserrat;
+            font-size: 20px;
+            line-height: 120%;
+            margin-bottom: 2rem;
+            border: 1px solid #0c0d10d4;
+            background: transparent;
+            color: #fff;
+
+            &:focus {
+              outline: none;
+              box-shadow: 0 1rem 2rem rgba(#000000a1, 0.1);
+              background: #000000a1;
+            }
+            
+            &::placeholder {
+              color: $color-black;
+            }
+
+            &:not(:placeholder-shown) {
+              background: #000000a1;
+            }
+    
+            @include respond(tab-port) {
+              font-size: 14px;
+              line-height: 120%;
+            }
+          }
+        }
+        
+      }
+    }
+
+}

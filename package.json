@@ -1,0 +1,53 @@
+{
+  "name": "metrik-space-wordpress-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "author": "metrik space",
+  "homepage": "http://www.metrik-space.com",
+  "private": "true",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp --bs --dev --watch"
+  },
+  "browserslist": [
+    "last 3 version",
+    "not dead",
+    "> 0.1%",
+    "android >= 5",
+    "edge >= 12",
+    "ie >= 10",
+    "ios >= 10"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@material/button": "^4.0.0",
+    "@material/tab": "^4.0.0",
+    "@material/tab-bar": "^4.0.0",
+    "@rollup/stream": "^1.1.0",
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-if": "^3.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-remove-empty-lines": "^0.1.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-strip-debug": "^3.0.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-terser": "^1.4.1",
+    "motion-ui": "^2.0.3",
+    "node-bourbon": "^4.2.8",
+    "rollup": "^2.36.1",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0",
+    "yargs": "^16.2.0",
+    "@prettier/plugin-php": "^0.16.3",
+    "prettier": "^2.3.2"
+  },
+  "dependencies": {
+    "slick-carousel": "^1.8.1"
+  }
+}

@@ -1,0 +1,63 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+/// @type List
+$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
+//////////////////////////////////////////////////////////
+/////// COLOURS
+// Primary colour
+$primary-white: #faf9f9;
+
+//secondary-colour
+$primary-col: #203d7f;
+
+//background-colour
+$background-colour: #100010;
+
+//black-text
+$black-text: #faf9f9;
+
+$color-white: #fff;
+
+$color-black: #0C0D10;
+
+//////////////////////////////////////////////////////////
+/////// PADDING
+
+//////////////////////////////////////////////////////////
+/////// FONTS
+
+//////////////////////////////////////////////////////////
+//// SECTION MARGINS
+
+$section-margin: 18rem;
+
+//////////////////////////////////////////////////////////
+/// BORDERS
+
+$border-1px: 1px solid $primary-col;
+
+$border-2px: 2px solid $primary-col;
+
+$form-border: 4px solid $primary-col;
+
+//////////////////////////////////////////////////////////
+/////BORDER-RADIUS
+
+$border-radius: 4px;
+
+//////////////////////////////////////////////////////////
+/// ANIMATIONS
+
+$animation: all 0.3s;
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1650px !default;

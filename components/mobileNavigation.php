@@ -28,6 +28,7 @@ global $woocommerce;
                         </a>
                         <a href="<?= $root ?>about/" >
                             ABOUT
+                            
                         </a>
                         <a href="<?= $root ?>contact/" >
                             CONTACT

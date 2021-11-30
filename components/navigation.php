@@ -6,13 +6,20 @@ global $woocommerce;
     <div class="nav__container">
         <div class="nav__items">
             <?php if(strpos($_SERVER['REQUEST_URI'], 'shop')){ ?>
+                <a href="<?= get_template_directory_uri() ?>/height-sonics/shop/" class="nav__items__links">
+                    <img src="<?= get_template_directory_uri() ?>/assets/images/heightlogowhite.png" alt="height sonics logo" />
+                </a>
                 <a href="#about" class="nav__items__links nicescroll">
                     ABOUT
                 </a>
                 <a href="#shop" class="nav__items__links nicescroll">
                     SHOP
                 </a>
+                
             <?php } else { ?>
+                <a href="<?= get_template_directory_uri() ?>/height-sonics/shop/" class="nav__items__links">
+                    <img src="<?= get_template_directory_uri() ?>/assets/images/heightsampleslogo.png" alt="height sonics logo" />
+                </a>
                 <a href="#about" class="nav__items__links nicescroll">
                     ABOUT
                 </a>

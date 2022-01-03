@@ -56,7 +56,36 @@ get_header();
 				</div>
 				<div id="particles-js-sampleshop" class="particles-js"></div>
 			</div>
-
+			
+			<div class="mastering__contactdark">
+			<div id="particles-js-shopcontact" class="particles-js"></div>
+			<div class="mastering__container" id="contact">
+				<h1>Get In Contact</h1>
+				<div class="mastering__contactdark__formCont" >
+					<form action="" class="mastering__contactdark__form">
+						<div class="mastering__contactdark__form__input">
+							<label for="name">Name</label>
+							<input  name="name"   type="text"  placeholder="Your name" required />
+						</div>
+						<div class="mastering__contactdark__form__input">
+							<label for="email">Email</label>
+							<input  name="email"   type="text"  placeholder="Email address" required />
+						</div>
+						<div class="mastering__contactdark__form__input">
+							<label for="number">Phone number</label>
+							<input  name="number"   type="text"  placeholder="Optional" required />
+						</div>
+						<div class="mastering__contactdark__form__input">
+							<label for="message">Message</label>
+							<textarea name="message"  id=""  cols="30"  rows="10" placeholder="Message here..."  required></textarea>
+						</div>
+						<input type="submit" value="Send" class="btn-reverse">
+					</form>
+					<div class="mastering__contactdark__maps">
+						<img src="<?=get_template_directory_uri()?>/assets/images/capture.png" alt="">
+					</div>
+				</div>
+			</div>
 	</div>
 	<?php include get_template_directory() . '/components/footer.php'; ?>
 </main><!-- #main -->

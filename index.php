@@ -13,25 +13,21 @@
  * @package dasa
  */
 
-$video = get_field('background_video');
-
 get_header(); ?>
 
 </head>
 
 <main id="primary">
-  <div class="home" style="background-image: url(<?= get_template_directory_uri() . '/assets/images/heightbg.png' ?>)">
-    <div class="home__cont">
-      <div class="home__cont__logo">
-        <img src="<?=get_template_directory_uri()?>/assets/images/heightlogowhite.png" alt="Height Mastering logo">
-        <div class="home__cont__logo__buttons">
-          <a href="mastering/">Height Mastering</a>
-          <a href="shop/">Height samples</a>
-        </div>
-      </div>
+  <div class="landing">
+    <div class="landing__sonics" style="background-image: url('<?= get_template_directory_uri() ?>/assets/images/heightbgcol.png')">
+      <img src="<?=get_template_directory_uri()?>/assets/images/heightsampleslogo.png" alt="Height Samples logo">
+      <a href="shop/">Open</a>
+    </div>
+    <div class="landing__mastering" style="background-image: url(<?= get_template_directory_uri() . '/assets/images/heightbg.png' ?>)">
+      <img src="<?=get_template_directory_uri()?>/assets/images/heightlogowhite.png" alt="Height Mastering logo">
+      <a href="mastering/">Open</a>
     </div>
   </div>
-
 </main><!-- #main -->
 
 <?php get_footer();

@@ -162,7 +162,6 @@
       position: relative;
       height: 850px;
       
-      
 
       h1 {
         color: $color-black;
@@ -176,9 +175,16 @@
       }
 
 
+      &__formCont {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+      }
+
 
       &__form {
-        width: 800px;
+        width: 45%;
         z-index: 999999;
         position: relative;
 
@@ -191,7 +197,7 @@
         &__input {
           display: flex;
           flex-direction: column;
-          width: 55%;
+          width: 100%;
           max-width: 550px;
 
           label {
@@ -273,6 +279,142 @@
         }
         
       }
+
+      &__maps {
+        width: 50%;
+        z-index: 2;
+      }
     }
 
+
+    &__contactdark {
+      color: $color-white;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      height: 850px;
+      
+
+      h1 {
+        color: $color-white;
+        text-align: center;
+        margin-bottom: 2.5rem;
+      }
+
+      p {
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+
+
+      &__formCont {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+
+      &__form {
+        width: 45%;
+        z-index: 999999;
+        position: relative;
+
+        &__group {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+        }
+
+        &__input {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          max-width: 550px;
+
+          label {
+            font-style: normal;
+            font-family: Montserrat;
+            font-size: 22px;
+            line-height: 120%;
+            margin-bottom: 5px;
+    
+            @include respond(tab-port) {
+              font-size: 16px;
+              line-height: 120%;
+            }
+          
+          }
+
+
+          input {
+            border: 1px solid $color-white;
+            padding: 10px;
+            font-style: normal;
+            font-family: Montserrat;
+            font-size: 20px;
+            line-height: 120%;
+            margin-bottom: 2rem;
+            background: transparent;
+            color: $color-black;
+
+            &:focus {
+              outline: none;
+              box-shadow: 0 1rem 2rem rgba(#6a4a4aa1, 0.1);
+              background: #ffffffd1;
+            }
+            
+            &::placeholder {
+              color: $color-white;
+            }
+
+            &:not(:placeholder-shown) {
+              background: #ffffffd1;
+            }
+
+            @include respond(tab-port) {
+              font-size: 14px;
+              line-height: 120%;
+            }
+          }
+
+          textarea {
+            padding: 10px;
+            font-style: normal;
+            font-family: Montserrat;
+            font-size: 20px;
+            line-height: 120%;
+            margin-bottom: 2rem;
+            border: 1px solid $color-white;
+            background: transparent;
+            color: $color-black;
+
+            &:focus {
+              outline: none;
+              box-shadow: 0 1rem 2rem rgba(#ffffffd1, 0.1);
+              background: #ffffffd1;
+            }
+            
+            &::placeholder {
+              color: $color-white;
+            }
+
+            &:not(:placeholder-shown) {
+              background: #ffffffd1;
+            }
+    
+            @include respond(tab-port) {
+              font-size: 14px;
+              line-height: 120%;
+            }
+          }
+        }
+        
+      }
+
+      &__maps {
+        width: 50%;
+        z-index: 2;
+      }
+    }
 }

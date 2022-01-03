@@ -16,6 +16,8 @@ $(function () {
 
     particlesJS.load('particles-js-sampleshop', '/height-sonics/wp-content/themes/heightsonics/assets/js/src/particles-samples.json', function () { });
 
+    particlesJS.load('particles-js-shopcontact', '/height-sonics/wp-content/themes/heightsonics/assets/js/src/particles-samples.json', function () { });
+
   } else if (pathname.includes("mastering")) {
     /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
     particlesJS.load('particles-js', '/height-sonics/wp-content/themes/heightsonics/assets/js/src/particles.json', function () { });

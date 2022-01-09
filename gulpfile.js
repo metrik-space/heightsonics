@@ -32,7 +32,7 @@ const options = {
   bs: {
     run: argv.bs ? true : false,
     // You need to add your url for the path to your wordpress site here.
-    proxy: 'http://localhost/height-sonics/',
+    proxy: 'http://wordpress-starter-test/',
     root: './',
     opts: {
       open: argv.bs ? true : false,

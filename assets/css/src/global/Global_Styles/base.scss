@@ -2,13 +2,18 @@
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
 @import './variables.scss';
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap');
+@font-face {
+  font-family: 'SequalLight';
+  src: url('../../../../assets/fonts/Sequel100Black-45.ttf'); /* IE9 Compat Modes */
+  src: 
+    /* Modern Browsers */ url('../../../../assets/fonts/Sequel100Black-45.ttf') format('truetype');
+}
 /**
  * Set up a decent box model on the root element
  */
 body {
   color: $black-text;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'SequalLight', sans-serif !important;
   //font: normal 125% / 1.4 $text-font-stack;
   background-color: #fff;
   font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5%

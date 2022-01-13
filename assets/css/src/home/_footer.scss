@@ -35,6 +35,11 @@
           width: 40px;
           height: auto;
           margin-right: 2rem;
+          transition: all 0.2s ease-in-out;
+
+          &:hover {
+            transform: scale(1.07);
+          }
         }
     }
 
@@ -51,33 +56,15 @@
         line-height: 120%;
         position: relative;
         transition: all 0.2s ease-in-out;
-
+        color: #fff;
 
         @include respond(tab-port) {
           width: 45%;
           margin-bottom: 1.5rem;
         }
 
-        &:before,
-        &:after {
-          content: '';
-          position: absolute;
-          bottom: -3px;
-          width: 0px;
-          height: 3px;
-          margin: 5px 0 0;
-          transition: all 0.2s ease-in-out;
-          transition-duration: 0.5s;
-          opacity: 0;
-          background-color: #fff;
-          left: 0;
-        }
         &:hover {
-          &:before,
-          &:after {
-            width: 100%;
-            opacity: 1;
-          }
+          color: #fa559a !important;
         }
       }
     }

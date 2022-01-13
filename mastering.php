@@ -81,19 +81,19 @@ get_header(); ?>
             <form action="" class="mastering__contact__form">
                 <div class="mastering__contact__form__input">
                     <label for="name">Name</label>
-                    <input  name="name"   type="text"  placeholder="Your name" required />
+                    <input  name="name"   type="text"  placeholder="Name" required />
                 </div>
                 <div class="mastering__contact__form__input">
                     <label for="email">Email</label>
-                    <input  name="email"   type="text"  placeholder="Email address" required />
+                    <input  name="email"   type="text"  placeholder="Email" required />
                 </div>
                 <div class="mastering__contact__form__input">
                     <label for="number">Phone number</label>
-                    <input  name="number"   type="text"  placeholder="Optional" required />
+                    <input  name="number"   type="number"  placeholder="Optional" required />
                 </div>
                 <div class="mastering__contact__form__input">
                     <label for="message">Message</label>
-                    <textarea name="message"  id=""  cols="30"  rows="10" placeholder="Message here..."  required></textarea>
+                    <textarea name="message"  id=""  cols="30"  rows="10" placeholder="Message"  required></textarea>
                 </div>
                 <input type="submit" value="Send" class="btn">
             </form>

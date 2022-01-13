@@ -93,7 +93,7 @@ get_header(); ?>
                 </div>
                 <div class="mastering__contact__form__input">
                     <label for="message">Message</label>
-                    <textarea name="message"  id=""  cols="30"  rows="10" placeholder="Message"  required></textarea>
+                    <textarea name="message"  id=""  cols="30"  rows="7" placeholder="Message"  required></textarea>
                 </div>
                 <input type="submit" value="Send" class="btn">
             </form>

@@ -90,6 +90,10 @@
       flex-direction: column;
       width: 562px;
 
+      @include respond(tab-land){
+        width: 80%;
+      }
+
       img {
         width: 100%;
         height: auto;
@@ -97,4 +101,30 @@
       }
     }
   }
+}
+
+.slide-arrow{
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+}
+.prev-arrow{
+  left: -10px;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 15px solid #000;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  z-index: 999;
+}
+.next-arrow{
+  right: -10px;
+  width: 0;
+  height: 0;
+  border-right: 0 solid transparent;
+  border-left: 15px solid #000;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  z-index: 999;
 }

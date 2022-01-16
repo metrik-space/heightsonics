@@ -4,32 +4,20 @@
   display: none;
   height: 100%;
   color: #fff;
-  background-color: #492e0a;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   height: auto;
-  z-index: 999999;
+  z-index: 9999999999;
   width: 100vw;
-  padding: 1rem;
+  padding: 2rem 1rem 1rem 1rem;
 
   @include respond(tab-port) {
     display: flex;
-    background-color: transparent;
+    background-color:rgba(0, 0, 0, 0.551);
   }
   justify-content: center;
   align-items: center;
-
-  &__bg {
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 83% 95%, 65% 100%, 42% 97%, 24% 100%, 13% 96%, 0 100%, 0 0);
-
-    @include respond(tab-port) {
-      clip-path: 0;
-    }
-  }
 
   &__content {
     display: flex;
@@ -41,6 +29,7 @@
       width: 40%;
       background-repeat: no-repeat;
       background-size: contain;
+      background-position: center;
       z-index: 100;
     }
 
@@ -92,9 +81,10 @@
         }
 
         &__button {
-          background-color: #492e0a;
-          height: 30px;
-          width: 35px;
+          background-color: #000;
+          border-radius: 50%;
+          height: 55px;
+          width: 55px;
           z-index: 999998;
           text-align: center;
           cursor: pointer;
@@ -128,6 +118,8 @@
 
             &::before {
               top: -0.8rem;
+
+
             }
             &::after {
               top: 0.8rem;
@@ -159,41 +151,16 @@
 
         &__submenu {
           position: fixed;
-          top: 85px;
+          top: 0;
           opacity: 0;
           transition: ease 0.25s;
           z-index: 1000000;
-          background-color: #2a5248;
-          height: calc(100% - 85px);
+          background-color: #000;
+          height: 100vh;
           width: 100vw;
           left: 0;
           display: none;
           flex-direction: column;
-
-          &__header {
-            width: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-
-            img {
-              width: 100%;
-              height: auto;
-            }
-          }
-
-          &__footer {
-            width: 100%;
-            position: absolute;
-            bottom: 0px;
-            left: 0;
-            z-index: -1;
-
-            img {
-              width: 100%;
-              height: auto;
-            }
-          }
 
           &__links {
             display: flex;
@@ -202,7 +169,6 @@
             width: 100%;
             justify-content: center;
             height: 100%;
-            margin-top: 10rem;
 
             a {
               color: #fff;
@@ -216,6 +182,22 @@
               @include respond(phone) {
                 font-size: 26px;
                 line-height: 32px;
+              }
+            }
+
+            &__socials {
+              display: flex;
+              justify-content: center;
+              margin-top: 2.5rem;
+
+
+              a {
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 48px;
+                height: 48px;
+                margin-right: 2rem;
+              
               }
             }
 

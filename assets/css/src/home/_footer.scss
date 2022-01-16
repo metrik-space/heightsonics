@@ -3,9 +3,14 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   position: relative;
   bottom: 0;
+
+  @include respond(tab-port){
+    height: auto;
+  }
 
   &__container {
     max-width: 1600px;
@@ -18,6 +23,11 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+
+    @include respond(tab-port){
+      justify-content: center;
+    }
 
     p {
       font-style: normal;
@@ -25,11 +35,22 @@
       font-size: 16px;
       line-height: 120%;
       text-align: center;
+
+      @include respond(tab-port){
+        width: 100%;
+        padding: 1rem 0 1rem 0;
+      }
     }
 
     &__socials {
       display: flex;
       align-items: center;
+
+      @include respond(tab-port){
+        width: 100%;
+        padding: 1rem 0 1rem 0;
+        justify-content: center;
+      }
 
         img {
           width: 40px;
@@ -58,9 +79,10 @@
         transition: all 0.2s ease-in-out;
         color: #fff;
 
-        @include respond(tab-port) {
-          width: 45%;
-          margin-bottom: 1.5rem;
+        @include respond(tab-port){
+          width: 100%;
+          padding: 1rem 0 1rem 0;
+          text-align: center;
         }
 
         &:hover {

@@ -5,8 +5,8 @@ global $woocommerce;
 <div class="nav">
     <div class="nav__container">
         <div class="nav__items">
-            <?php if(strpos($_SERVER['REQUEST_URI'], 'shop')){ ?>
-                <a href="<?= get_template_directory_uri() ?>/height-sonics/shop/" class="nav__items__links">
+            <?php if (strpos($_SERVER['REQUEST_URI'], 'shop')) { ?>
+                <a href="<?= $root ?>shop" class="nav__items__links">
                     <img src="<?= get_template_directory_uri() ?>/assets/images/heightsampleslogo.png" alt="height sonics logo" />
                 </a>
                 <a href="#about" class="nav__items__links nicescroll">
@@ -16,11 +16,17 @@ global $woocommerce;
                     SHOP
                 </a>
             <?php } else { ?>
-                <a href="<?= get_template_directory_uri() ?>/height-sonics/mastering/" class="nav__items__links">
+                <a href="<?= $root ?>mastering" class="nav__items__links">
                     <img src="<?= get_template_directory_uri() ?>/assets/images/heightlogowhite.png" alt="height sonics logo" />
                 </a>
                 <a href="#about" class="nav__items__links nicescroll">
                     ABOUT
+                </a>
+                <a href="#testimonials" class="nav__items__links nicescroll">
+                    TESTIMONIALS
+                </a>
+                <a href="#work" class="nav__items__links nicescroll">
+                    FEATURED WORK
                 </a>
                 <a href="#contact" class="nav__items__links nicescroll">
                     CONTACT

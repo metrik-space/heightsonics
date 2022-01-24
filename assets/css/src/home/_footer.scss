@@ -8,7 +8,7 @@
   position: relative;
   bottom: 0;
 
-  @include respond(tab-port){
+  @include respond(tab-port) {
     height: auto;
   }
 
@@ -25,18 +25,18 @@
     align-items: center;
     flex-wrap: wrap;
 
-    @include respond(tab-port){
+    @include respond(tab-port) {
       justify-content: center;
     }
 
     p {
       font-style: normal;
       font-weight: normal;
-      font-size: 16px;
+      font-size: 13px;
       line-height: 120%;
       text-align: center;
 
-      @include respond(tab-port){
+      @include respond(tab-port) {
         width: 100%;
         padding: 1rem 0 1rem 0;
       }
@@ -46,22 +46,22 @@
       display: flex;
       align-items: center;
 
-      @include respond(tab-port){
+      @include respond(tab-port) {
         width: 100%;
         padding: 1rem 0 1rem 0;
         justify-content: center;
       }
 
-        img {
-          width: 40px;
-          height: auto;
-          margin-right: 2rem;
-          transition: all 0.2s ease-in-out;
+      img {
+        width: 24px;
+        height: auto;
+        margin-right: 2rem;
+        transition: all 0.2s ease-in-out;
 
-          &:hover {
-            transform: scale(1.07);
-          }
+        &:hover {
+          transform: scale(1.07);
         }
+      }
     }
 
     &__links {
@@ -73,13 +73,13 @@
       a {
         font-style: normal;
         font-weight: normal;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 120%;
         position: relative;
         transition: all 0.2s ease-in-out;
         color: #fff;
 
-        @include respond(tab-port){
+        @include respond(tab-port) {
           width: 100%;
           padding: 1rem 0 1rem 0;
           text-align: center;
@@ -90,6 +90,5 @@
         }
       }
     }
-
   }
 }

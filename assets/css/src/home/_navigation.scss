@@ -44,7 +44,7 @@
 
       @include respond(laptop) {
         margin-right: 2rem;
-        font-size: 16px;
+        font-size: 14px;
       }
 
       @include respond(tab-land) {

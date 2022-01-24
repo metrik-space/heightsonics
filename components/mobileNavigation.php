@@ -3,7 +3,7 @@ $root = (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_
 global $woocommerce;
 
 
-if(strpos($_SERVER['REQUEST_URI'], 'shop')){ 
+if (strpos($_SERVER['REQUEST_URI'], 'shop')) {
     $linkFacebook = "www.facebook.com/HeightMasteringUK";
     $linkInsta = "https://www.instagram.com/height_mastering/";
 
@@ -19,7 +19,7 @@ if(strpos($_SERVER['REQUEST_URI'], 'shop')){
 <div class="mobileNav">
     <div class="mobileNav__bg" style=""></div>
     <div class="mobileNav__content">
-        <a href="<?= $root ?>saladelf/shop/" class="mobileNav__content__logo" style="background-image: url('<?= get_template_directory_uri() ?><?=$logo?>')"></a>
+        <a href="<?= $root ?>saladelf/shop/" class="mobileNav__content__logo" style="background-image: url('<?= get_template_directory_uri() ?><?= $logo ?>')"></a>
 
         <div class="mobileNav__content__buttons">
             <a href="<?= $root ?>cart/" class="mobileNav__content__buttons__logo" style="background-image: url('<?= get_template_directory_uri() ?>/assets/images/mobileBasket.png')">
@@ -35,41 +35,47 @@ if(strpos($_SERVER['REQUEST_URI'], 'shop')){
                     <span class="mobileNav__content__buttons__menu__button__icon">&nbsp;</span>
                 </label>
                 <div class="mobileNav__content__buttons__menu__submenu">
-                 <div class="mobileNav__content__buttons__menu__submenu__links">
-                        <?php if(strpos($_SERVER['REQUEST_URI'], 'shop')){ ?>
+                    <div class="mobileNav__content__buttons__menu__submenu__links">
+                        <?php if (strpos($_SERVER['REQUEST_URI'], 'shop')) { ?>
 
-                                <a href="#shop" class="mobNavLink">
-                                    SHOP
-                                </a>
-                                <a href="#about" class="mobNavLink">
+                            <a href="#shop" class="mobNavLink">
+                                SHOP
+                            </a>
+                            <a href="#about" class="mobNavLink">
+                                ABOUT
+                            </a>
+                            <a href="<?= get_template_directory_uri() ?>/height-sonics/mastering/">
+                                HEIGHT MASTERING
+                            </a>
+                        <?php } else if (strpos($_SERVER['REQUEST_URI'], 'mastering')) { ?>
+                            <a href="#about" class="mobNavLink">
+                                <a href="#about" class="nav__items__links nicescroll">
                                     ABOUT
                                 </a>
-                                <a href="<?= get_template_directory_uri() ?>/height-sonics/mastering/" >
-                                    HEIGHT MASTERING
+                                <a href="#testimonials" class="nav__items__links nicescroll">
+                                    TESTIMONIALS
                                 </a>
-                        <?php } else if(strpos($_SERVER['REQUEST_URI'], 'mastering')) { ?>
-                                <a href="#about" class="mobNavLink">
-                                    ABOUT
-                                    
+                                <a href="#work" class="nav__items__links nicescroll">
+                                    FEATURED WORK
                                 </a>
-                                <a href="#contact" class="mobNavLink">
+                                <a href="#contact" class="nav__items__links nicescroll">
                                     CONTACT
                                 </a>
-                                <a href="<?= get_template_directory_uri() ?>/height-sonics/shop/" >
+                                <a href="<?= get_template_directory_uri() ?>/height-sonics/shop/">
                                     HEIGHT SAMPLES
                                 </a>
-                        <?php } ?>
-                        <div class="mobileNav__content__buttons__menu__submenu__links__socials">
-                            <a href="<?=$linkFacebook?>" style="background-image: url('<?= get_template_directory_uri() ?>/assets/images/fb_icon.svg')"></a>
-                            <a href="<?=$linkInsta?>" style="background-image: url('<?= get_template_directory_uri() ?>/assets/images/insta_icon.svg')"></a>
-                        </div>
-                        </div>
-
+                            <?php } ?>
+                            <div class="mobileNav__content__buttons__menu__submenu__links__socials">
+                                <a href="<?= $linkFacebook ?>" style="background-image: url('<?= get_template_directory_uri() ?>/assets/images/fb_icon.svg')"></a>
+                                <a href="<?= $linkInsta ?>" style="background-image: url('<?= get_template_directory_uri() ?>/assets/images/insta_icon.svg')"></a>
+                            </div>
                     </div>
+
                 </div>
             </div>
         </div>
     </div>
+</div>
 </div>
 </div>
 

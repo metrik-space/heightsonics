@@ -9,75 +9,85 @@
   position: fixed;
   top: 0;
   display: flex;
+  justify-content: center;
+  background-color: #000;
+  align-items: center;
 
 
+  
 
-  &__sonics {
-    width: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+
+  &__content {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    
+    width: 65%;
+    height: auto;
+    max-width: 900px;
 
-    img {
-      margin-bottom: 2.5rem;
-      width: 375px;
+    &__logo {
+      width: 100%;
       height: auto;
+      margin-bottom: 5rem;
     }
 
-    a {
-      width: 150px;
-      background-color: #fff;
-      color: $color-black;
-      text-align: center;
-      padding: 8px;
-      font-size: 20px;
-      transition: $animation;
-      border: 1px solid $color-black;
+    &__buttons {
+      display: flex;
+      justify-content: space-between;
+      
+      width: 100%;
 
-      &:hover {
-        background-color: $color-black;
-        color: #fff;
-        border: 1px solid #fff;
+
+      &__bg {
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        transition: 0.9s ease;
       }
-    }
-  }
 
-  &__mastering {
-    width: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+      a {
+        width: 45%;
+        height: 175px;
+        color: #000;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+        flex-direction: column;
+        transition: $animation;
+        border: 2px solid $color-white;
+        overflow: hidden;
 
-    img {
-      margin-bottom: 2.5rem;
-      width: 375px;
-      height: auto;
-    }
+        &:hover {
+          box-shadow: 0 1rem 2rem rgba(#ffffff20, 0.1);
 
-    a {
-      width: 150px;
-      background-color: #fff;
-      color: $color-black;
-      text-align: center;
-      padding: 8px;
-      font-size: 20px;
-      transition: $animation;
-      border: 1px solid $color-black;
-
-      &:hover {
-        background-color: $color-black;
-        color: #fff;
-        border: 1px solid #fff;
+          .landing__content__buttons__bg {
+            transform: scale(1.04);
+          }
+        }
       }
+
+      &__logo {
+        width: 60%;
+        height: auto;
+        margin-bottom: 20px;
+        z-index: 2;
+      }
+
+      &__text {
+        font-size: 24px;
+        background-color: #fff;
+        padding: 5px 10px;
+        padding-top: 0px;
+        z-index: 2;
+      }
+
     }
+
   }
 }

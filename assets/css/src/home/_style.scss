@@ -14,9 +14,6 @@
   align-items: center;
 
 
-  
-
-
   &__content {
     display: flex;
     flex-direction: column;
@@ -28,6 +25,7 @@
       width: 100%;
       height: auto;
       margin-bottom: 5rem;
+      z-index: 99;
     }
 
     &__buttons {

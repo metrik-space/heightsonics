@@ -11,6 +11,8 @@ $(function () {
 
 
   var pathname = window.location.pathname;
+
+
   if (pathname.includes("shop")) {
     particlesJS.load('particles-js-sampleabout', '/wp-content/themes/height_sonics/assets/js/src/particles-samples.json', function () { });
 
@@ -32,6 +34,8 @@ $(function () {
     particlesJS.load('particles-js2', '/wp-content/themes/height_sonics/assets/js/src/particles.json', function () { });
 
     particlesJS.load('particles-js3', '/wp-content/themes/height_sonics/assets/js/src/particles.json', function () { });
+  } else {
+    particlesJS.load('particles-js-landing', '/wp-content/themes/height_sonics/assets/js/src/particles-samples.json', function () { });
   }
 
 
@@ -49,8 +53,6 @@ $(function () {
     dots: true,
     autoplay: true,
     autoplaySpeed: 5000,
-    prevArrow: '<button class="slide-arrow prev-arrow"></button>',
-    nextArrow: '<button class="slide-arrow next-arrow"></button>',
     responsive: [
       {
         breakpoint: 900,

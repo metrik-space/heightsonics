@@ -19,6 +19,7 @@ get_header(); ?>
 
 <main id="primary">
   <div class="landing">
+    <div id="particles-js-landing" class="particles-js"></div>
     <div class="landing__content">
       <img class="landing__content__logo" src="<?=get_template_directory_uri()?>/assets/images/heightlogowhite.png" alt="Height Mastering logo">
       <div class="landing__content__buttons">

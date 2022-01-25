@@ -9,11 +9,14 @@ global $woocommerce;
                 <a href="<?= $root ?>shop" class="nav__items__links">
                     <img src="<?= get_template_directory_uri() ?>/assets/images/heightsampleslogo.png" alt="height sonics logo" />
                 </a>
+                <a href="#shop" class="nav__items__links nicescroll">
+                    SHOP
+                </a>
                 <a href="#about" class="nav__items__links nicescroll">
                     ABOUT
                 </a>
-                <a href="#shop" class="nav__items__links nicescroll">
-                    SHOP
+                <a href="#contact" class="nav__items__links nicescroll">
+                    CONTACT
                 </a>
             <?php } else { ?>
                 <a href="<?= $root ?>mastering" class="nav__items__links">

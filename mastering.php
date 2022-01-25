@@ -145,21 +145,41 @@ get_header(); ?>
                             <input name="email" type="text" placeholder="Email" required />
                         </div>
                         <div class="mastering__contact__form__input">
-                            <label for="number">Phone number</label>
-                            <input name="number" type="number" placeholder="Optional" required />
-                        </div>
-                        <div class="mastering__contact__form__input">
                             <label for="message">Message</label>
                             <textarea name="message" id="" cols="30" rows="7" placeholder="Message" required></textarea>
                         </div>
-                        <input type="submit" value="Send" class="btn">
+                        <input type="submit" value="Submit" class="btn">
                     </form>
                     <div class="mastering__contact__maps">
                         <img src="<?= get_template_directory_uri() ?>/assets/images/capture.png" alt="">
                     </div>
                 </div>
+            <div class="mastering__contact__pageButtons">
+                <a href="shop/">
+                    <div class="mastering__contact__pageButtons__bg" style="background-image: url(<?=get_template_directory_uri()?>/assets/images/heightbgcol.png)"></div>
+                    <img class="mastering__contact__pageButtons__logo" src="<?=get_template_directory_uri()?>/assets/images/heightsampleslogo.png" alt="Height Mastering logo">
+                    <div class="mastering__contact__pageButtons__text">
+                        Enter
+                    </div>
+                </a>
+                <a href="shop/">
+                    <div class="mastering__contact__pageButtons__bg" style="background-image: url(<?=get_template_directory_uri()?>/assets/images/heightbgcol.png)"></div>
+                    <img class="mastering__contact__pageButtons__logo" src="<?=get_template_directory_uri()?>/assets/images/heightsampleslogo.png" alt="Height Mastering logo">
+                    <div class="mastering__contact__pageButtons__text">
+                        Enter
+                    </div>
+                </a>
+                <a href="mastering/" style="background-image: url(<?=get_template_directory_uri()?>/assets/images/heightbg.png)">
+                    <div class="mastering__contact__pageButtons__bg" style="background-image: url(<?=get_template_directory_uri()?>/assets/images/heightbg.png)"></div>
+                    <img class="mastering__contact__pageButtons__logo" src="<?=get_template_directory_uri()?>/assets/images/heightlogowhite.png" alt="Height Mastering logo">
+                    <div class="mastering__contact__pageButtons__text">
+                        Enter
+                    </div>
+                </a>
+            </div>
             </div>
         </div>
+
     </div>
     <?php include 'components/footer.php'; ?>
 </main><!-- #main -->

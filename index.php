@@ -23,14 +23,14 @@ get_header(); ?>
     <div class="landing__content">
       <img class="landing__content__logo" src="<?=get_template_directory_uri()?>/assets/images/heightlogowhite.png" alt="Height Mastering logo">
       <div class="landing__content__buttons">
-        <a href="mastering/">
+        <a href="shop/">
           <div class="landing__content__buttons__bg" style="background-image: url(<?=get_template_directory_uri()?>/assets/images/heightbgcol.png)"></div>
           <img class="landing__content__buttons__logo" src="<?=get_template_directory_uri()?>/assets/images/heightsampleslogo.png" alt="Height Mastering logo">
           <div class="landing__content__buttons__text">
             Enter
           </div>
         </a>
-        <a href="shop/" style="background-image: url(<?=get_template_directory_uri()?>/assets/images/heightbg.png)">
+        <a href="mastering/" style="background-image: url(<?=get_template_directory_uri()?>/assets/images/heightbg.png)">
           <div class="landing__content__buttons__bg" style="background-image: url(<?=get_template_directory_uri()?>/assets/images/heightbg.png)"></div>
           <img class="landing__content__buttons__logo" src="<?=get_template_directory_uri()?>/assets/images/heightlogowhite.png" alt="Height Mastering logo">
           <div class="landing__content__buttons__text">

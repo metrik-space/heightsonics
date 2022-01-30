@@ -28,28 +28,28 @@ $(function () {
 
 
   if (pathname.includes("shop")) {
-    particlesJS.load('particles-js-sampleabout', '/wp-content/themes/heightsonics/assets/js/src/particles-samples.json', function () { });
+    particlesJS.load('particles-js-sampleabout', '/wp-content/themes/height_sonics/assets/js/src/particles-samples.json', function () { });
 
-    particlesJS.load('particles-js-samples-about', '/wp-content/themes/heightsonics/assets/js/src/particles.json', function () { });
+    particlesJS.load('particles-js-samples-about', '/wp-content/themes/height_sonics/assets/js/src/particles.json', function () { });
 
-    particlesJS.load('particles-js-sampleshop', '/wp-content/themes/heightsonics/assets/js/src/particles-samples.json', function () { });
+    particlesJS.load('particles-js-sampleshop', '/wp-content/themes/height_sonics/assets/js/src/particles-samples.json', function () { });
 
-    particlesJS.load('particles-js-shopcontact', '/wp-content/themes/heightsonics/assets/js/src/particles-samples.json', function () { });
+    particlesJS.load('particles-js-shopcontact', '/wp-content/themes/height_sonics/assets/js/src/particles-samples.json', function () { });
 
 
   } else if (pathname.includes("mastering")) {
     /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-    particlesJS.load('particles-js', '/wp-content/themes/heightsonics/assets/js/src/particles.json', function () { });
+    particlesJS.load('particles-js', '/wp-content/themes/height_sonics/assets/js/src/particles.json', function () { });
 
-    particlesJS.load('particles-js-mastering-about', '/wp-content/themes/heightsonics/assets/js/src/particles-white.json', function () { });
+    particlesJS.load('particles-js-mastering-about', '/wp-content/themes/height_sonics/assets/js/src/particles-white.json', function () { });
 
-    particlesJS.load('particles-js4', '/wp-content/themes/heightsonics/assets/js/src/particles-white.json', function () { });
+    particlesJS.load('particles-js4', '/wp-content/themes/height_sonics/assets/js/src/particles-white.json', function () { });
 
-    particlesJS.load('particles-js2', '/wp-content/themes/heightsonics/assets/js/src/particles.json', function () { });
+    particlesJS.load('particles-js2', '/wp-content/themes/height_sonics/assets/js/src/particles.json', function () { });
 
-    particlesJS.load('particles-js3', '/wp-content/themes/heightsonics/assets/js/src/particles.json', function () { });
+    particlesJS.load('particles-js3', '/wp-content/themes/height_sonics/assets/js/src/particles.json', function () { });
   } else {
-    particlesJS.load('particles-js-landing', '/wp-content/themes/heightsonics/assets/js/src/particles-samples.json', function () { });
+    particlesJS.load('particles-js-landing', '/wp-content/themes/height_sonics/assets/js/src/particles-samples.json', function () { });
   }
 
 

@@ -6,7 +6,7 @@ get_header(); ?>
 <main id="primary" class="site-main">
     <?php include 'components/navigation.php'; ?>
     <?php include get_template_directory() . '/components/mobileNavigation.php'; ?>
-    <div class="hero" style="background-image: url('<?= get_template_directory_uri() ?>/assets/images/heightbg.png')">
+    <div class="hero" style="background-image: url('<?= get_template_directory_uri() ?>/assets/images/heightbg.jpg')">
         <div class="hero__cont">
             <div class="hero__cont__logo">
                 <img src="<?= get_template_directory_uri() ?>/assets/images/heightlogowhite.png" alt="Height Mastering logo">
@@ -31,9 +31,8 @@ get_header(); ?>
                 <div id="particles-js" class="particles-js"></div>
             </div>
         </div>
-
+        <div class="mastering__container">
         <div id="testimonials" class="mastering__testi">
-            <div class="mastering__container">
                 <h1>
                     Testimonials
                 </h1>
@@ -96,36 +95,6 @@ get_header(); ?>
                     <div class="mastering__featured-work__cont__item">
                         <img src="<?= get_template_directory_uri() . '/assets/images/illtruth1.jpeg' ?>">
                     </div>
-                    <div class="mastering__featured-work__cont__item">
-                        <img src="<?= get_template_directory_uri() . '/assets/images/illtruth1.jpeg' ?>">
-                    </div>
-                    <div class="mastering__featured-work__cont__item">
-                        <img src="<?= get_template_directory_uri() . '/assets/images/illtruth1.jpeg' ?>">
-                    </div>
-                    <div class="mastering__featured-work__cont__item">
-                        <img src="<?= get_template_directory_uri() . '/assets/images/illtruth1.jpeg' ?>">
-                    </div>
-                    <div class="mastering__featured-work__cont__item">
-                        <img src="<?= get_template_directory_uri() . '/assets/images/illtruth1.jpeg' ?>">
-                    </div>
-                    <div class="mastering__featured-work__cont__item">
-                        <img src="<?= get_template_directory_uri() . '/assets/images/illtruth1.jpeg' ?>">
-                    </div>
-                    <div class="mastering__featured-work__cont__item">
-                        <img src="<?= get_template_directory_uri() . '/assets/images/illtruth1.jpeg' ?>">
-                    </div>
-                    <div class="mastering__featured-work__cont__item">
-                        <img src="<?= get_template_directory_uri() . '/assets/images/illtruth1.jpeg' ?>">
-                    </div>
-                    <div class="mastering__featured-work__cont__item">
-                        <img src="<?= get_template_directory_uri() . '/assets/images/illtruth1.jpeg' ?>">
-                    </div>
-                    <div class="mastering__featured-work__cont__item">
-                        <img src="<?= get_template_directory_uri() . '/assets/images/illtruth1.jpeg' ?>">
-                    </div>
-                    <div class="mastering__featured-work__cont__item">
-                        <img src="<?= get_template_directory_uri() . '/assets/images/illtruth1.jpeg' ?>">
-                    </div>
                 </div>
             </div>
             <div id="particles-js4" class="particles-js"></div>
@@ -155,22 +124,19 @@ get_header(); ?>
                     </div>
                 </div>
             <div class="mastering__contact__pageButtons">
+                <a href="/">
+                    <div class="mastering__contact__pageButtons__bg" style="background-color: #000;"></div>
+                    <img class="mastering__contact__pageButtons__logoHome" src="<?=get_template_directory_uri()?>/assets/images/heightsonicslogo.png" alt="Height Mastering logo">
+                </a>
                 <a href="shop/">
-                    <div class="mastering__contact__pageButtons__bg" style="background-image: url(<?=get_template_directory_uri()?>/assets/images/heightbgcol.png)"></div>
+                    <div class="mastering__contact__pageButtons__bg" style="background-image: url(<?=get_template_directory_uri()?>/assets/images/heightbgcol.jpg)"></div>
                     <img class="mastering__contact__pageButtons__logo" src="<?=get_template_directory_uri()?>/assets/images/heightsampleslogo.png" alt="Height Mastering logo">
                     <div class="mastering__contact__pageButtons__text">
                         Enter
                     </div>
                 </a>
-                <a href="shop/">
-                    <div class="mastering__contact__pageButtons__bg" style="background-image: url(<?=get_template_directory_uri()?>/assets/images/heightbgcol.png)"></div>
-                    <img class="mastering__contact__pageButtons__logo" src="<?=get_template_directory_uri()?>/assets/images/heightsampleslogo.png" alt="Height Mastering logo">
-                    <div class="mastering__contact__pageButtons__text">
-                        Enter
-                    </div>
-                </a>
-                <a href="mastering/" style="background-image: url(<?=get_template_directory_uri()?>/assets/images/heightbg.png)">
-                    <div class="mastering__contact__pageButtons__bg" style="background-image: url(<?=get_template_directory_uri()?>/assets/images/heightbg.png)"></div>
+                <a href="mastering/" style="background-image: url(<?=get_template_directory_uri()?>/assets/images/heightbg.jpg)">
+                    <div class="mastering__contact__pageButtons__bg" style="background-image: url(<?=get_template_directory_uri()?>/assets/images/heightbg.jpg)"></div>
                     <img class="mastering__contact__pageButtons__logo" src="<?=get_template_directory_uri()?>/assets/images/heightlogowhite.png" alt="Height Mastering logo">
                     <div class="mastering__contact__pageButtons__text">
                         Enter

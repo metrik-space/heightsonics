@@ -21,17 +21,17 @@ get_header(); ?>
   <div class="landing">
     <div id="particles-js-landing" class="particles-js"></div>
     <div class="landing__content">
-      <img class="landing__content__logo" src="<?=get_template_directory_uri()?>/assets/images/heightlogowhite.png" alt="Height Mastering logo">
+      <img class="landing__content__logo" src="<?=get_template_directory_uri()?>/assets/images/heightsonicslogo.png" alt="Height Mastering logo">
       <div class="landing__content__buttons">
         <a href="shop/">
-          <div class="landing__content__buttons__bg" style="background-image: url(<?=get_template_directory_uri()?>/assets/images/heightbgcol.png)"></div>
+          <div class="landing__content__buttons__bg" style="background-image: url(<?=get_template_directory_uri()?>/assets/images/heightbgcol.jpg)"></div>
           <img class="landing__content__buttons__logo" src="<?=get_template_directory_uri()?>/assets/images/heightsampleslogo.png" alt="Height Mastering logo">
           <div class="landing__content__buttons__text">
             Enter
           </div>
         </a>
-        <a href="mastering/" style="background-image: url(<?=get_template_directory_uri()?>/assets/images/heightbg.png)">
-          <div class="landing__content__buttons__bg" style="background-image: url(<?=get_template_directory_uri()?>/assets/images/heightbg.png)"></div>
+        <a href="mastering/" style="background-image: url(<?=get_template_directory_uri()?>/assets/images/heightbg.jpg)">
+          <div class="landing__content__buttons__bg" style="background-image: url(<?=get_template_directory_uri()?>/assets/images/heightbg.jpg)"></div>
           <img class="landing__content__buttons__logo" src="<?=get_template_directory_uri()?>/assets/images/heightlogowhite.png" alt="Height Mastering logo">
           <div class="landing__content__buttons__text">
             Enter

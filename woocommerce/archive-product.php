@@ -8,7 +8,7 @@ get_header();
 <main id="primary" class="site-main">
 	<?php include get_template_directory() . '/components/navigation.php'; ?>
 	<?php include get_template_directory() . '/components/mobileNavigation.php'; ?>
-	<div class="hero" style="background-image: url('<?= get_template_directory_uri() ?>/assets/images/heightbgcol.png')">
+	<div class="hero" style="background-image: url('<?= get_template_directory_uri() ?>/assets/images/heightbgcol.jpg')">
 		<div class="hero__cont">
 			<div class="hero__cont__logo">
 				<img src="<?= get_template_directory_uri() ?>/assets/images/heightsampleslogo.png" alt="Height Samples logo">
@@ -90,22 +90,19 @@ get_header();
 					</div>
 				</div>
 				<div class="shop__contactdark__pageButtons">
+                <a href="/">
+					<div class="shop__contactdark__pageButtons__bg" style="background-color: transparent;"></div>
+                    <img class="shop__contactdark__pageButtons__logoHome" src="<?=get_template_directory_uri()?>/assets/images/heightsonicslogo.png" alt="Height Mastering logo">
+                </a>
                 <a href="shop/">
-                    <div class="shop__contactdark__pageButtons__bg" style="background-image: url(<?=get_template_directory_uri()?>/assets/images/heightbgcol.png)"></div>
+                    <div class="shop__contactdark__pageButtons__bg" style="background-image: url(<?=get_template_directory_uri()?>/assets/images/heightbgcol.jpg)"></div>
                     <img class="shop__contactdark__pageButtons__logo" src="<?=get_template_directory_uri()?>/assets/images/heightsampleslogo.png" alt="Height Mastering logo">
                     <div class="shop__contactdark__pageButtons__text">
                         Enter
                     </div>
                 </a>
-                <a href="shop/">
-                    <div class="shop__contactdark__pageButtons__bg" style="background-image: url(<?=get_template_directory_uri()?>/assets/images/heightbgcol.png)"></div>
-                    <img class="shop__contactdark__pageButtons__logo" src="<?=get_template_directory_uri()?>/assets/images/heightsampleslogo.png" alt="Height Mastering logo">
-                    <div class="shop__contactdark__pageButtons__text">
-                        Enter
-                    </div>
-                </a>
-                <a href="mastering/" style="background-image: url(<?=get_template_directory_uri()?>/assets/images/heightbg.png)">
-                    <div class="shop__contactdark__pageButtons__bg" style="background-image: url(<?=get_template_directory_uri()?>/assets/images/heightbg.png)"></div>
+                <a href="mastering/" style="background-image: url(<?=get_template_directory_uri()?>/assets/images/heightbg.jpg)">
+                    <div class="shop__contactdark__pageButtons__bg" style="background-image: url(<?=get_template_directory_uri()?>/assets/images/heightbg.jpg)"></div>
                     <img class="shop__contactdark__pageButtons__logo" src="<?=get_template_directory_uri()?>/assets/images/heightlogowhite.png" alt="Height Mastering logo">
                     <div class="shop__contactdark__pageButtons__text">
                         Enter

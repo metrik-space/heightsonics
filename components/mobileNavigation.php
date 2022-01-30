@@ -16,8 +16,8 @@ if (strpos($_SERVER['REQUEST_URI'], 'shop')) {
 }
 
 ?>
-<div class="mobileNav">
-    <div class="mobileNav__bg" style=""></div>
+<div class="mobileNav" id="mobileNav__bg">
+    <div  class="mobileNav__bg" style=""></div>
     <div class="mobileNav__content">
         <a href="<?= $root ?>saladelf/shop/" class="mobileNav__content__logo" style="background-image: url('<?= get_template_directory_uri() ?><?= $logo ?>')"></a>
 
@@ -44,26 +44,26 @@ if (strpos($_SERVER['REQUEST_URI'], 'shop')) {
                             <a href="#about" class="mobNavLink">
                                 ABOUT
                             </a>
-                            <a href="<?= get_template_directory_uri() ?>/height-sonics/mastering/">
+                            <a href="<?= get_template_directory_uri() ?>mastering/">
                                 HEIGHT MASTERING
                             </a>
                         <?php } else if (strpos($_SERVER['REQUEST_URI'], 'mastering')) { ?>
                             <a href="#about" class="mobNavLink">
-                                <a href="#about" class="nav__items__links nicescroll">
                                     ABOUT
                                 </a>
-                                <a href="#testimonials" class="nav__items__links nicescroll">
+                            <a href="#testimonials" class="mobNavLink">
                                     TESTIMONIALS
                                 </a>
-                                <a href="#work" class="nav__items__links nicescroll">
+                            <a href="#work" class="mobNavLink">
                                     FEATURED WORK
                                 </a>
-                                <a href="#contact" class="nav__items__links nicescroll">
+                            <a href="#contact" class="mobNavLink">
                                     CONTACT
                                 </a>
-                                <a href="<?= get_template_directory_uri() ?>/height-sonics/shop/">
+                                <a href="<?= get_template_directory_uri() ?>shop/">
                                     HEIGHT SAMPLES
                                 </a>
+                            
                             <?php } ?>
                             <div class="mobileNav__content__buttons__menu__submenu__links__socials">
                                 <a href="<?= $linkFacebook ?>" style="background-image: url('<?= get_template_directory_uri() ?>/assets/images/fb_icon.svg')"></a>

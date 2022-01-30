@@ -90,6 +90,10 @@
           width: 90%;
           line-height: 1.4;
           font-weight: 100;
+
+          @include respond(tab-port) {
+            width: 100%;
+          }
         }
         max-width: 625px;
         width: 70%;
@@ -97,11 +101,13 @@
 
         @include respond(tab-land) {
           width: 75%;
+          text-align: center;
         }
 
         @include respond(tab-port) {
           width: 90%;
           padding-top: 5rem;
+          text-align: center;
         }
 
         &__image {
@@ -112,6 +118,7 @@
             width: 55% !important;
             margin-left: 25%;
             height: auto !important;
+            max-width: 275px !important;
             padding-top: 5rem;
           }
         }
@@ -124,9 +131,11 @@
       height: 100%;
       position: relative;
 
+
       @include respond(tab-port) {
         display: none;
       }
+      
 
       &__image {
         position: absolute;
@@ -137,6 +146,12 @@
         left: 7.5%;
         transform: translate(50%, -50%);
         z-index: 9999999;
+
+        @include respond(tab-land) {
+          height: 530px !important;
+          left: -17.5% !important;
+        }
+
       }
     }
   }
@@ -175,6 +190,11 @@
       overflow: hidden;
 
       @include respond(tab-port) {
+        width: 70%;
+        margin-left: 15%;
+      }
+
+      @include respond(phone) {
         width: 90%;
         margin-left: 5%;
       }
@@ -223,6 +243,10 @@
           font-family: 'Courier New', Courier, monospace;
           font-size: 20px;
           font-weight: bold;
+
+          @include respond(tab-port) {
+            width: 80%;
+          }
         }
       }
     }
@@ -236,6 +260,11 @@
     height: auto;
     padding-top: 125px;
 
+    @include respond(tab-port) {
+      justify-content: center;
+    }
+
+
     &__pageButtons {
       align-items: center;
       justify-content: space-between;
@@ -247,9 +276,10 @@
       padding-bottom: 75px;
 
       @include respond(tab-port) {
-        width: 90%;
-        margin-left: 5%;
         margin-bottom: 5rem;
+        padding-top: 0;
+        flex-direction: column;
+        padding-bottom: 0;
       }
 
 
@@ -279,6 +309,13 @@
         overflow: hidden;
         border: 2px solid #fff;
 
+        @include respond(tab-port) {
+          height: 145px;
+          width: 65%;
+          margin-bottom: 2rem;
+          max-width: 300px;
+        }
+
         &:hover {
           box-shadow: 0 1rem 2rem rgba(#ffffff20, 0.1);
 
@@ -292,6 +329,12 @@
         width: 60%;
         height: auto;
         margin-bottom: 20px;
+        z-index: 2;
+      }
+
+      &__logoHome {
+        width: 60%;
+        height: auto;
         z-index: 2;
       }
 
@@ -328,6 +371,10 @@
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
+
+      @include respond(tab-port) {
+        justify-content: center;
+      }
     }
 
     &__form {
@@ -336,8 +383,13 @@
       position: relative;
 
       @include respond(tab-port) {
+        width: 70%;
+        margin-bottom: 5rem;
+
+      }
+
+      @include respond(phone) {
         width: 90%;
-        margin-left: 5%;
         margin-bottom: 5rem;
       }
 
@@ -352,6 +404,10 @@
         flex-direction: column;
         width: 100%;
         max-width: 550px;
+
+        @include respond(tab-port) {
+          max-width: 100%;
+        }
 
         label {
           font-style: normal;
@@ -424,9 +480,10 @@
       z-index: 2;
 
       @include respond(tab-port) {
-        width: 90%;
-        margin-left: 5%;
-        margin-bottom: 10rem;
+        width: 100%;
+        margin-bottom: 5rem;
+        display: flex;
+        justify-content: center;
       }
     }
   }

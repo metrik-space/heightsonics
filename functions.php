@@ -12,7 +12,7 @@ function metrik_includes()
 {
 	wp_enqueue_style('global-styles', get_template_directory_uri() . '/assets/css/dist/global/manifest.css', []);
 	wp_enqueue_style('home-styles', get_template_directory_uri() . '/assets/css/dist/home/manifest.css', []);
-	
+
 	wp_enqueue_script('scripts', get_template_directory_uri() . '/assets/js/dist/scripts.min.js', ['jquery'], true);
 
 	wp_deregister_script('jquery');
@@ -26,8 +26,6 @@ function metrik_includes()
 	wp_enqueue_script('slick', get_template_directory_uri() . '/assets/js/vendor/slick.min.js', ['jquery'], true);
 
 	wp_enqueue_script('particlesJS', 'https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js');
-
-	
 }
 add_action('wp_enqueue_scripts', 'metrik_includes', 20);
 
@@ -77,3 +75,7 @@ function woo_remove_product_tabs($tabs)
 }
 
 
+if (function_exists('acf_add_options_page')) {
+
+	acf_add_options_page();
+}

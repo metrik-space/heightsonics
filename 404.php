@@ -15,8 +15,7 @@ get_header();
 	<?php include 'components/navigation.php'; ?>
 	<?php include get_template_directory() . '/components/mobileNavigation.php'; ?>
 	<div class="about">
-		<div class="about__header"><img src="<?= get_template_directory_uri() .
-													'/assets/images/header-bg.png' ?>" alt=""></div>
+		<div class="about__header"></div>
 		<div class="about__container">
 			<section class="error-404 not-found">
 				<header class="page-header">
@@ -30,8 +29,7 @@ get_header();
 
 		</div><!-- .page-content -->
 		</section><!-- .error-404 -->
-		<div class="about__footer"><img src="<?= get_template_directory_uri() .
-													'/assets/images/footer-bg.png' ?>" alt=""></div>
+		<div class="about__footer"></div>
 	</div>
 </main><!-- #main -->
 

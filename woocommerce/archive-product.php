@@ -16,33 +16,30 @@ get_header();
 		</div>
 	</div>
 	<div class="shop">
-	<div class="shop__shopCont">
+		<div class="shop__shopCont">
 			<div class="shop__container">
 				<div class="shop__items" id="shop">
-					<div class="shop__items__item">
-						<div class="shop__items__item__image">
-							<div style="background-image: url('<?= get_template_directory_uri() ?>/assets/images/samplepack.jpg')"></div>
-						</div>
-						<div class="shop__items__item__content">
-							<h4>Revan - Not Another D&B Sample Pack - Vol​.​1</h4>
-						</div>
-					</div>
-					<div class="shop__items__item">
-						<div class="shop__items__item__image">
-							<div style="background-image: url('<?= get_template_directory_uri() ?>/assets/images/samplepack.jpg')"></div>
-						</div>
-						<div class="shop__items__item__content">
-							<h4>Revan - Not Another D&B Sample Pack - Vol​.​1</h4>
-						</div>
-					</div>
-					<div class="shop__items__item">
-						<div class="shop__items__item__image">
-							<div style="background-image: url('<?= get_template_directory_uri() ?>/assets/images/samplepack.jpg')"></div>
-						</div>
-						<div class="shop__items__item__content">
-							<h4>Revan - Not Another D&B Sample Pack - Vol​.​1</h4>
-						</div>
-					</div>
+					<?php
+					// Setup your custom query
+					$args = ['post_type' => 'product'];
+					$loop = new WP_Query($args);
+
+					while ($loop->have_posts()) :
+						$loop->the_post(); ?>
+						<a href="<?php echo get_permalink($loop->post->ID); ?>" class="shop__items__item">
+							<div class="shop__items__item__image">
+								<div style="background-image: url(<?= get_the_post_thumbnail_url($loop->post->ID); ?>)"></div>
+							</div>
+							<div class="shop__items__item__content">
+								<h4><?= the_title() ?></h4>
+							</div>
+						</a>
+					<?php
+					endwhile;
+					wp_reset_query();
+
+					// Remember to reset
+					?>
 				</div>
 			</div>
 			<div id="particles-js-sampleshop" class="particles-js"></div>
@@ -90,25 +87,25 @@ get_header();
 					</div>
 				</div>
 				<div class="shop__contactdark__pageButtons">
-                <a href="/">
-					<div class="shop__contactdark__pageButtons__bg" style="background-color: transparent;"></div>
-                    <img class="shop__contactdark__pageButtons__logoHome" src="<?=get_template_directory_uri()?>/assets/images/heightsonicslogo.png" alt="Height Mastering logo">
-                </a>
-                <a href="shop/">
-                    <div class="shop__contactdark__pageButtons__bg" style="background-image: url(<?=get_template_directory_uri()?>/assets/images/heightbgcol.jpg)"></div>
-                    <img class="shop__contactdark__pageButtons__logo" src="<?=get_template_directory_uri()?>/assets/images/heightsampleslogo.png" alt="Height Mastering logo">
-                    <div class="shop__contactdark__pageButtons__text">
-                        Enter
-                    </div>
-                </a>
-                <a href="mastering/" style="background-image: url(<?=get_template_directory_uri()?>/assets/images/heightbg.jpg)">
-                    <div class="shop__contactdark__pageButtons__bg" style="background-image: url(<?=get_template_directory_uri()?>/assets/images/heightbg.jpg)"></div>
-                    <img class="shop__contactdark__pageButtons__logo" src="<?=get_template_directory_uri()?>/assets/images/heightlogowhite.png" alt="Height Mastering logo">
-                    <div class="shop__contactdark__pageButtons__text">
-                        Enter
-                    </div>
-                </a>
-            </div>
+					<a href="/">
+						<div class="shop__contactdark__pageButtons__bg" style="background-color: transparent;"></div>
+						<img class="shop__contactdark__pageButtons__logoHome" src="<?= get_template_directory_uri() ?>/assets/images/heightsonicslogo.png" alt="Height Mastering logo">
+					</a>
+					<a href="shop/">
+						<div class="shop__contactdark__pageButtons__bg" style="background-image: url(<?= get_template_directory_uri() ?>/assets/images/heightbgcol.jpg)"></div>
+						<img class="shop__contactdark__pageButtons__logo" src="<?= get_template_directory_uri() ?>/assets/images/heightsampleslogo.png" alt="Height Mastering logo">
+						<div class="shop__contactdark__pageButtons__text">
+							Enter
+						</div>
+					</a>
+					<a href="mastering/" style="background-image: url(<?= get_template_directory_uri() ?>/assets/images/heightbg.jpg)">
+						<div class="shop__contactdark__pageButtons__bg" style="background-image: url(<?= get_template_directory_uri() ?>/assets/images/heightbg.jpg)"></div>
+						<img class="shop__contactdark__pageButtons__logo" src="<?= get_template_directory_uri() ?>/assets/images/heightlogowhite.png" alt="Height Mastering logo">
+						<div class="shop__contactdark__pageButtons__text">
+							Enter
+						</div>
+					</a>
+				</div>
 			</div>
 		</div>
 		<?php include get_template_directory() . '/components/footer.php'; ?>

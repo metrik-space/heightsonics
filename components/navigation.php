@@ -5,7 +5,7 @@ global $woocommerce;
 <div class="nav">
     <div class="nav__container">
         <div class="nav__items">
-            <?php if (strpos($_SERVER['REQUEST_URI'], 'shop')) { ?>
+            <?php if (strpos($_SERVER['REQUEST_URI'], 'shop') || strpos($_SERVER['REQUEST_URI'], 'product')) { ?>
                 <a href="<?= $root ?>shop" class="nav__items__links">
                     <img src="<?= get_template_directory_uri() ?>/assets/images/heightsampleslogo.png" alt="height sonics logo" />
                 </a>

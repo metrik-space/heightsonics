@@ -131,11 +131,9 @@
       height: 100%;
       position: relative;
 
-
       @include respond(tab-port) {
         display: none;
       }
-      
 
       &__image {
         position: absolute;
@@ -151,7 +149,6 @@
           height: 530px !important;
           left: -17.5% !important;
         }
-
       }
     }
   }
@@ -243,6 +240,7 @@
           font-family: 'Courier New', Courier, monospace;
           font-size: 20px;
           font-weight: bold;
+          color: $color-white;
 
           @include respond(tab-port) {
             width: 80%;
@@ -264,7 +262,6 @@
       justify-content: center;
     }
 
-
     &__pageButtons {
       align-items: center;
       justify-content: space-between;
@@ -281,7 +278,6 @@
         flex-direction: column;
         padding-bottom: 0;
       }
-
 
       &__bg {
         height: 100%;
@@ -346,7 +342,6 @@
         z-index: 2;
         line-height: 120%;
       }
-
     }
 
     @include respond(tab-port) {
@@ -385,7 +380,6 @@
       @include respond(tab-port) {
         width: 70%;
         margin-bottom: 5rem;
-
       }
 
       @include respond(phone) {
@@ -430,7 +424,7 @@
           margin-bottom: 2rem;
           background: #000;
           color: #fff;
-          font-family: 'Montserrat',  sans-serif;
+          font-family: 'Montserrat', sans-serif;
 
           &::placeholder {
             color: $color-white;
@@ -456,7 +450,7 @@
           border: 2px solid $color-white;
           background: #000;
           color: #fff;
-          font-family: 'Montserrat',  sans-serif;
+          font-family: 'Montserrat', sans-serif;
 
           &::placeholder {
             color: $color-white;

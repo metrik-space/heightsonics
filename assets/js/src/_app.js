@@ -49,7 +49,7 @@ $(function () {
 
     particlesJS.load('particles-js3', '/wp-content/themes/height_sonics/assets/js/src/particles.json', function () { });
   } else {
-    particlesJS.load('particles-js-landing', '/wp-content/themes/height_sonics/assets/js/src/particles-sonics.json', function () { });
+    particlesJS.load('particles-js-landing', '/wp-content/themes/height_sonics/assets/js/src/particles-white.json', function () { });
   }
 
 

@@ -289,6 +289,7 @@
         top: 0;
         z-index: 1;
         transition: 0.9s ease;
+        cursor: pointer;
       }
 
       a {
@@ -304,6 +305,7 @@
         transition: $animation;
         overflow: hidden;
         border: 2px solid #fff;
+        cursor: pointer;
 
         @include respond(tab-port) {
           height: 145px;
@@ -314,17 +316,14 @@
 
         &:hover {
           box-shadow: 0 1rem 2rem rgba(#ffffff20, 0.1);
+          transform: scale(1.02);
 
-          .shop__contactdark__pageButtons__bg {
-            transform: scale(1.04);
-          }
         }
       }
 
       &__logo {
         width: 60%;
         height: auto;
-        margin-bottom: 20px;
         z-index: 2;
       }
 

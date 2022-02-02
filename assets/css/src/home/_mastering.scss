@@ -321,6 +321,8 @@
         z-index: 1;
         transition: 0.9s ease;
         border: 2px solid #000;
+        cursor: pointer;
+
       }
 
       a {
@@ -334,6 +336,7 @@
         align-items: center;
         flex-direction: column;
         transition: $animation;
+        cursor: pointer;
         overflow: hidden;
 
         @include respond(tab-port) {
@@ -345,33 +348,22 @@
 
         &:hover {
           box-shadow: 0 1rem 2rem rgba(#0000006c, 0.2);
-
-          .mastering__contact__pageButtons__bg {
-            transform: scale(1.04);
-          }
+          transform: scale(1.02);
         }
       }
 
       &__logo {
         width: 60%;
         height: auto;
-        margin-bottom: 20px;
         z-index: 2;
+        cursor: pointer;
       }
 
       &__logoHome {
         width: 60%;
         height: auto;
         z-index: 2;
-      }
-
-      &__text {
-        font-size: 24px;
-        background-color: #000;
-        padding: 5px 10px;
-        padding-top: 0px;
-        z-index: 2;
-        line-height: 120%;
+        cursor: pointer;
       }
 
     }

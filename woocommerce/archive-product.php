@@ -94,16 +94,10 @@ get_header();
 					<a href="shop/">
 						<div class="shop__contactdark__pageButtons__bg" style="background-image: url(<?= get_template_directory_uri() ?>/assets/images/heightbgcol.jpg)"></div>
 						<img class="shop__contactdark__pageButtons__logo" src="<?= get_template_directory_uri() ?>/assets/images/heightsampleslogo.png" alt="Height Mastering logo">
-						<div class="shop__contactdark__pageButtons__text">
-							Enter
-						</div>
 					</a>
 					<a href="mastering/" style="background-image: url(<?= get_template_directory_uri() ?>/assets/images/heightbg.jpg)">
 						<div class="shop__contactdark__pageButtons__bg" style="background-image: url(<?= get_template_directory_uri() ?>/assets/images/heightbg.jpg)"></div>
 						<img class="shop__contactdark__pageButtons__logo" src="<?= get_template_directory_uri() ?>/assets/images/heightlogowhite.png" alt="Height Mastering logo">
-						<div class="shop__contactdark__pageButtons__text">
-							Enter
-						</div>
 					</a>
 				</div>
 			</div>

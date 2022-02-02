@@ -58,6 +58,7 @@
         top: 0;
         z-index: 1;
         transition: 0.9s ease;
+        cursor: pointer;
       }
 
       a {
@@ -73,6 +74,7 @@
         transition: $animation;
         overflow: hidden;
         border: 2px solid $color-white;
+        cursor: pointer;
 
         @include respond(phone){
           width: 65%;
@@ -82,26 +84,15 @@
 
         &:hover {
           box-shadow: 0 1rem 2rem rgba(#ffffff20, 0.2);
-
-          .landing__content__buttons__bg {
-            transform: scale(1.04);
-          }
+          transform: scale(1.02);
         }
       }
 
       &__logo {
         width: 60%;
         height: auto;
-        margin-bottom: 20px;
         z-index: 2;
-      }
-
-      &__text {
-        font-size: 24px;
-        background-color: #fff;
-        padding: 5px 10px;
-        padding-top: 0px;
-        z-index: 2;
+        cursor: pointer;
       }
 
     }

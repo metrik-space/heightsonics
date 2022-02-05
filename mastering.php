@@ -9,8 +9,8 @@ get_header(); ?>
     <div class="hero" >
     <video autoplay muted loop playsinline width="100%" height="100vh" poster="<?= get_template_directory_uri() ?>/assets/images/heightbg.jpg' ?>">
 
-        <source src="<?= get_template_directory_uri() . '/assets/videos/heightMasteringVid.mp4' ?>" type="video/mp4">
-        <source src="<?= get_template_directory_uri() . '/assets/videos/heightMasteringVid.webm' ?>" type="video/webm">
+        <source src="<?= get_template_directory_uri() . '/assets/videos/heightmasteringVid.mp4' ?>" type="video/mp4">
+        <source src="<?= get_template_directory_uri() . '/assets/videos/heightmasteringVid.webm' ?>" type="video/webm">
 
         Sorry, your browser doesn't support embedded videos.
         </video>

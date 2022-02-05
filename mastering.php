@@ -6,7 +6,14 @@ get_header(); ?>
 <main id="primary" class="site-main">
     <?php include 'components/navigation.php'; ?>
     <?php include get_template_directory() . '/components/mobileNavigation.php'; ?>
-    <div class="hero" style="background-image: url('<?= get_template_directory_uri() ?>/assets/images/heightbg.jpg')">
+    <div class="hero" >
+    <video autoplay muted loop playsinline width="100%" height="100vh" poster="<?= get_template_directory_uri() ?>/assets/images/heightbg.jpg' ?>">
+
+        <source src="<?= get_template_directory_uri() . '/assets/videos/heightMasteringVid.mp4' ?>" type="video/mp4">
+        <source src="<?= get_template_directory_uri() . '/assets/videos/heightMasteringVid.webm' ?>" type="video/webm">
+
+        Sorry, your browser doesn't support embedded videos.
+        </video>
         <div class="hero__cont">
             <div class="hero__cont__logo">
                 <img src="<?= get_template_directory_uri() ?>/assets/images/heightlogowhite.png" alt="Height Mastering logo">

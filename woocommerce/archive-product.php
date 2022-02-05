@@ -9,6 +9,13 @@ get_header();
 	<?php include get_template_directory() . '/components/navigation.php'; ?>
 	<?php include get_template_directory() . '/components/mobileNavigation.php'; ?>
 	<div class="hero" style="background-image: url('<?= get_template_directory_uri() ?>/assets/images/heightbgcol.jpg')">
+		<video autoplay muted loop playsinline width="100%" height="100vh" poster="<?= get_template_directory_uri() ?>/assets/images/heightbg.jpg' ?>">
+
+		<source src="<?= get_template_directory_uri() . '/assets/videos/heightsamplesVid.mp4' ?>" type="video/mp4">
+		<source src="<?= get_template_directory_uri() . '/assets/videos/heightsamplesVid.webm' ?>" type="video/webm">
+
+		Sorry, your browser doesn't support embedded videos.
+		</video>
 		<div class="hero__cont">
 			<div class="hero__cont__logo">
 				<img src="<?= get_template_directory_uri() ?>/assets/images/heightsampleslogo.png" alt="Height Samples logo">

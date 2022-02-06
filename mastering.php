@@ -24,20 +24,24 @@ get_header(); ?>
     <div class="mastering">
         <div class="mastering__about" id="about">
             <div class="mastering__about__left">
-                <div class="mastering__about__left__content">
-                    <h1>Production Made Simple</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    </p>
-                    <img class="mastering__about__left__image" src="<?= get_template_directory_uri() ?>/assets/images/portImage.png" alt="">
-                </div>
                 <div id="particles-js-mastering-about" class="particles-js"></div>
             </div>
             <div class="mastering__about__right">
-                <img class="mastering__about__right__image" src="<?= get_template_directory_uri() ?>/assets/images/portImage.png" alt="">
                 <div id="particles-js" class="particles-js"></div>
             </div>
+            <div class="mastering__container" style="display:flex; align-items: center;">
+				<div class="mastering__about__content">
+					<img class="mastering__about__content__image" src="<?= get_template_directory_uri() ?>/assets/images/portImage.png" alt="">
+					<div class="mastering__about__content__text">
+						<h1>Production Made Simple</h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+						</p>
+					</div>
+				</div>
+			</div>
         </div>
+
         <div class="mastering__container">
         <div id="testimonials" class="mastering__testi">
                 <h1>
@@ -87,9 +91,6 @@ get_header(); ?>
                     Featured Work
                 </h1>
                 <div class="mastering__featured-work__cont">
-                    <div class="mastering__featured-work__cont__item">
-                        <img src="<?= get_template_directory_uri() . '/assets/images/illtruth1.jpeg' ?>">
-                    </div>
                     <div class="mastering__featured-work__cont__item">
                         <img src="<?= get_template_directory_uri() . '/assets/images/illtruth1.jpeg' ?>">
                     </div>

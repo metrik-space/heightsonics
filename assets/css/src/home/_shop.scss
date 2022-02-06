@@ -137,6 +137,7 @@
         height: auto;
         max-height: 500px;
         z-index: 9999999;
+        max-width: 410px !important;
       }
     }
   }
@@ -226,6 +227,7 @@
           font-size: 20px;
           font-weight: bold;
           color: $color-white;
+          max-width: 90%;
 
           @include respond(tab-port) {
             width: 80%;

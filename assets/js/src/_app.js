@@ -21,6 +21,12 @@ $(function () {
       } else if ($(document).scrollTop() == 0) {
         $("#mobileNav__bg")[0].classList.remove("bgCol");
       }
+    } else {
+      if ($(document).scrollTop() >= 250) {
+        $("#navBg")[0].classList.add("bgCol");
+      } else if ($(document).scrollTop() == 0) {
+        $("#navBg")[0].classList.remove("bgCol");
+      }
     }
   });
 
@@ -60,18 +66,20 @@ $(function () {
 
   $('#multiple-items').slick({
     infinite: true,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
     dots: true,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 12000,
+    adaptiveHeight: true,
     responsive: [
       {
         breakpoint: 900,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          arrows: false,
         },
       },
       {
@@ -79,6 +87,7 @@ $(function () {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          arrows: false,
         },
       },
     ],

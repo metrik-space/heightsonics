@@ -3,23 +3,20 @@
 // -----------------------------------------------------------------------------
 @import './variables.scss';
 
-// @font-face {
-//   font-family: 'adumu';
-//   src: url('../../../../assets/fonts/Adumu.eot'); /* IE9 Compat Modes */
-//   src: url('../../../../assets/fonts/Adumu.eot?#iefix') format('embedded-opentype'),
-//     /* IE6-IE8 */ url('../../../../assets/fonts/Adumu.woff') format('woff'),
-//     /* Modern Browsers */ url('../../../../assets/fonts/Adumu.ttf') format('truetype'),
-//     /* Safari, Android, iOS */ url('../../../../assets/fonts/Adumu.svg') format('svg'); /* Legacy iOS */
-// }
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap');
-
+@font-face {
+  font-family: 'sequel-normal';
+  src: url('../../../../assets/fonts/Sequel100Black-45.eot'); /* IE9 Compat Modes */
+  src: url('../../../../assets/fonts/Sequel100Black-45.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('../../../../assets/fonts/Sequel100Black-45.woff') format('woff'),
+    /* Modern Browsers */ url('../../../../assets/fonts/Sequel100Black-45.ttf') format('truetype'),
+    /* Safari, Android, iOS */ url('../../../../assets/fonts/Sequel100Black-45.svg') format('svg'); /* Legacy iOS */
+}
 /**
  * Set up a decent box model on the root element
  */
 body {
   color: $black-text;
-  font-family: 'Montserrat',  sans-serif;
+  font-family: 'sequel-normal',  'sans-serif';
   //font: normal 125% / 1.4 $text-font-stack;
   background-color: #fff;
   font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5%
@@ -35,9 +32,7 @@ html {
   overflow-x: hidden;
   font-size: 65%;
   scroll-behavior: smooth;
-  
 }
-
 
 .nojq {
   display: none !important;

@@ -2,13 +2,21 @@
 $root = (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . '/';
 global $woocommerce;
 ?>
-<div class="nav">
+<div class="nav" id="navBg">
     <div class="nav__container">
         <div class="nav__items">
             <?php if (strpos($_SERVER['REQUEST_URI'], 'shop') || strpos($_SERVER['REQUEST_URI'], 'product')) { ?>
-                <a href="<?= $root ?>shop" class="nav__items__links">
-                    <img src="<?= get_template_directory_uri() ?>/assets/images/heightsampleslogo.png" alt="height sonics logo" />
-                </a>
+                <div class="nav__items__logo">
+                    <a href="shop/" >
+                        <img class="nav__items__logo__image" src="<?= get_template_directory_uri() ?>/assets/images/heightsampleslogo.png" alt="height sonics logo" />
+                    </a>
+                    <div class="nav__items__logo__drop">
+                        <div class="nav__items__logo__drop__link">
+                            <a href="mastering/"><img class="nav__items__logo__drop__link__image" src="<?= get_template_directory_uri() ?>/assets/images/heightlogowhite.png" alt="height sonics logo" /></a>
+                        </div>
+                    </div>
+                </div>
+
                 <a href="#shop" class="nav__items__links nicescroll">
                     SHOP
                 </a>
@@ -19,9 +27,16 @@ global $woocommerce;
                     CONTACT
                 </a>
             <?php } else { ?>
-                <a href="<?= $root ?>mastering" class="nav__items__links">
-                    <img src="<?= get_template_directory_uri() ?>/assets/images/heightlogowhite.png" alt="height sonics logo" />
-                </a>
+                <div class="nav__items__logo">
+                    <a href="mastering/" >
+                        <img class="nav__items__logo__image" src="<?= get_template_directory_uri() ?>/assets/images/heightlogowhite.png" alt="height sonics logo" />
+                    </a>
+                    <div class="nav__items__logo__drop" style="padding-top: 43.5px;">
+                        <div class="nav__items__logo__drop__link">
+                            <a href="shop/"><img class="nav__items__logo__drop__link__image" src="<?= get_template_directory_uri() ?>/assets/images/heightsampleslogo.png" alt="height sonics logo" /></a>
+                        </div>
+                    </div>
+                </div>
                 <a href="#about" class="nav__items__links nicescroll">
                     ABOUT
                 </a>

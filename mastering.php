@@ -6,18 +6,21 @@ get_header(); ?>
 <main id="primary" class="site-main">
     <?php include 'components/navigation.php'; ?>
     <?php include get_template_directory() . '/components/mobileNavigation.php'; ?>
-    <div class="hero" >
+    <div class="hero2" >
     <video autoplay muted loop playsinline width="100%" height="100vh" poster="<?= get_template_directory_uri() ?>/assets/images/heightbg.jpg' ?>">
 
-        <source src="<?= get_template_directory_uri() . '/assets/videos/heightmasteringVid.mp4' ?>" type="video/mp4">
-        <source src="<?= get_template_directory_uri() . '/assets/videos/heightmasteringVid.webm' ?>" type="video/webm">
+        <source src="<?= get_template_directory_uri() . '/assets/videos/heightmasteringVid-c.mp4' ?>" type="video/mp4">
+        <source src="<?= get_template_directory_uri() . '/assets/videos/heightmasteringVid-c.webm' ?>" type="video/webm">
 
         Sorry, your browser doesn't support embedded videos.
         </video>
-        <div class="hero__cont">
-            <div class="hero__cont__logo">
+        <div class="hero2__cont">
+            <div class="hero2__cont__logo">
                 <img src="<?= get_template_directory_uri() ?>/assets/images/heightlogowhite.png" alt="Height Mastering logo">
             </div>
+        </div>
+        <div class="hero2__arrow bounce">
+            <a href="#about"><img src="<?= get_template_directory_uri() ?>/assets/images/arrowdown.png" alt=""></a>
         </div>
     </div>
 
@@ -50,35 +53,53 @@ get_header(); ?>
                 <div class="mastering__testi__items" id="multiple-items">
 
                     <div class="mastering__testi__items__item">
+                        <h3>Rebel Music</h3>
                         <p>
-                            'This is the content of the review about how amazing you are amazing services and all that'
-
+                            'What the process should be like from top to bottom. Professional service with a friendly edge. Amazing masters, quality service and always in a timely fashion. The artists at Rebel Music are always very happy with their masters and the feedback they also receive. 10/10 each and every time.'
                         </p>
-                        <b>- Kaylem | Developer</b>
                     </div>
 
                     <div class="mastering__testi__items__item">
+                        <h3>
+                        Molecula
+                        </h3>
                         <p>
-                            This is the content of the review about how amazing you are amazing services and all that
-
+                            'Highly recommended - whenever I'm asked about a good mastering service I instantly think of Haden at Height Mastering. Clean, loud and clear, and a fast service. I've had many tracks mastered by Haden already and can't complain of any, and I'm picky when it comes to masters.''
                         </p>
-                        <b>- Timmy | Producer </b>
                     </div>
 
                     <div class="mastering__testi__items__item">
+                        <h3>
+                            Overview Music
+                        </h3>
                         <p>
-                            This is the content of the review about how amazing you are amazing services and all that
-
+                            'Height mastering delivers a great mastering service! Easy to work with, phenomenal feedback given and always delivers on time. We won’t be going anywhere else.'
                         </p>
-                        <b>- Timmy | Producer </b>
                     </div>
 
                     <div class="mastering__testi__items__item">
+                        <h3>
+                        Ekou Recordings
+                        </h3>
                         <p>
-                            This is the content of the review about how amazing you are amazing services and all that
-
+                            'We have been repeatedly using Height Mastering for 2 years now as the service is amazing! Top quality masters, great communication, amazing flexibility, availability and the final product never ceases to amaze us. Haden goes above and beyond when it comes to ensuring the best quality products are delivered. This is and will be our mastering company for many years, and I couldn't ask for a better working partner.'
                         </p>
-                        <b>- Timmy | Producer </b>
+                    </div>
+                    <div class="mastering__testi__items__item">
+                        <h3>
+                        Transparent Audio
+                        </h3>
+                        <p>
+                        'Although our relationship with Height Mastering has only been a year in the making, it’s been remarkable so far. Not only is the service professional and friendly, but also personal: giving his own thoughts and contribution towards creating a better master. Offering feedback for the artists to adjust slight changes considering a cleaner pre-master. We are always extremely impressed with the quality of masters and turnover time, crafting a perfect mixture of warmth, body, and clarity with the confidence of not losing volume and loudness. From the day we first contacted Height Mastering, we knew we were in good hands.'
+                        </p>
+                    </div>
+                    <div class="mastering__testi__items__item">
+                        <h3>
+                        Midas Touch Recordings
+                        </h3>
+                        <p>
+                            'Working with Height Mastering is like working with a friend. The professionalism and care taken, combined with his ear for detail and the love for music and the craft gives us as a label the possibility to get our music to that next level. He’s always there with advice where needed to get the maximum out of every release. We would definitely recommend his services.'
+                        </p>
                     </div>
 
                 </div>

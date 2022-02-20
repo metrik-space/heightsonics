@@ -11,8 +11,8 @@ get_header();
 	<div class="hero">
 		<video autoplay muted loop playsinline width="100%" height="100vh" poster="<?= get_template_directory_uri() ?>/assets/images/heightbg.jpg' ?>">
 
-		<source src="<?= get_template_directory_uri() . '/assets/videos/heightsamplesVid.mp4' ?>" type="video/mp4">
-		<source src="<?= get_template_directory_uri() . '/assets/videos/heightsamplesVid.webm' ?>" type="video/webm">
+		<source src="<?= get_template_directory_uri() . '/assets/videos/heightsamplesVid-c.mp4' ?>" type="video/mp4">
+		<source src="<?= get_template_directory_uri() . '/assets/videos/heightsamplesVid-c.webm' ?>" type="video/webm">
 
 		Sorry, your browser doesn't support embedded videos.
 		</video>
@@ -21,11 +21,14 @@ get_header();
 				<img src="<?= get_template_directory_uri() ?>/assets/images/heightsampleslogo.png" alt="Height Samples logo">
 			</div>
 		</div>
+		<div class="hero__arrow bounce">
+            <a href="#shop"><img src="<?= get_template_directory_uri() ?>/assets/images/arrowdown.png" alt=""></a>
+        </div>
 	</div>
 	<div class="shop">
-		<div class="shop__shopCont">
+		<div class="shop__shopCont" id="shop">
 			<div class="shop__container">
-				<div class="shop__items" id="shop">
+				<div class="shop__items">
 					<?php
 					// Setup your custom query
 					$args = ['post_type' => 'product'];

@@ -12,6 +12,8 @@
   background-color: $color-black;
   width: 100vw;
   z-index: 999999999999;
+  background-color: rgba(0,0,0,0.55);
+  transition: ease .3s;
 
   @include respond(tab-port) {
     display: none;
@@ -27,9 +29,73 @@
     align-items: flex-end;
   }
 
+
+
+
   &__items {
     display: flex;
     align-items: flex-end;
+
+    &__logo {
+      position: relative;
+      transition: $animation;
+      cursor: pointer;
+    
+      &:hover {
+        .nav__items__logo__drop {
+          display: block;
+        }
+      }
+
+      &__image {
+        width: 145px;
+        height: auto;
+        position: relative;
+        margin-right: 5rem;
+      }
+
+      &__drop {
+        display: none;
+        position: absolute;
+        height: auto;
+        left: -42.5px;
+        top: 0;
+        width: auto;
+        background-color: transparent;
+        padding: 1rem 2.5rem;
+        transition: $animation;
+        padding-top: 47px;
+
+        &__link {
+          width: 170px;
+          max-width: none;
+          padding: 5px;
+          background-color: transparent;
+          background-color: rgba(0,0,0,0.55);
+          padding: 1rem;
+          border: 1px solid #fff;
+          border-top: none;
+
+
+          &__image {
+            width: 100%;
+            height: auto;
+            max-width: none;
+            padding: 5px;
+            border: 1px solid #fff;
+            transition: $animation;
+
+            &:hover {
+              box-shadow: 0 1rem 2rem rgba(#ffffff20, 0.2);
+              transform: scale(1.02);
+            }
+          }
+          
+        }
+        
+      }
+
+  }
 
     &__links {
       margin-right: 5rem;
@@ -54,7 +120,6 @@
 
       img {
         width: 145px;
-        height: auto;
         position: relative;
       }
 

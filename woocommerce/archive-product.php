@@ -9,7 +9,7 @@ get_header();
 	<?php include get_template_directory() . '/components/navigation.php'; ?>
 	<?php include get_template_directory() . '/components/mobileNavigation.php'; ?>
 	<div class="hero">
-		<video autoplay muted loop playsinline width="100%" height="100vh" poster="<?= get_template_directory_uri() ?>/assets/images/heightbg.jpg' ?>">
+		<video autoplay muted loop playsinline width="100%" height="100vh" poster="<?= get_template_directory_uri() ?>/assets/images/heightbgcol.jpg' ?>">
 
 			<source src="<?= get_template_directory_uri() . '/assets/videos/heightsamplesVid-c.mp4' ?>" type="video/mp4">
 			<source src="<?= get_template_directory_uri() . '/assets/videos/heightsamplesVid-c.webm' ?>" type="video/webm">

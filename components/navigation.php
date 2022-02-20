@@ -52,7 +52,7 @@ global $woocommerce;
             <?php } ?>
         </div>
         <div class="nav__basket">
-            <a class="nav__basket__link" href="" style="background-image: url('<?= get_template_directory_uri() ?>/assets/images/shopping_basket.png')">
+            <a class="nav__basket__link" href="/cart" style="background-image: url('<?= get_template_directory_uri() ?>/assets/images/shopping_basket.png')">
                 <?php if ($woocommerce->cart->cart_contents_count > 0) { ?>
                     <span>
                         <?= $woocommerce->cart->cart_contents_count ?>

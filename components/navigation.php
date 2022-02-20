@@ -7,12 +7,12 @@ global $woocommerce;
         <div class="nav__items">
             <?php if (strpos($_SERVER['REQUEST_URI'], 'shop') || strpos($_SERVER['REQUEST_URI'], 'product')) { ?>
                 <div class="nav__items__logo">
-                    <a href="shop/" >
+                    <a href="shop/">
                         <img class="nav__items__logo__image" src="<?= get_template_directory_uri() ?>/assets/images/heightsampleslogo.png" alt="height sonics logo" />
                     </a>
                     <div class="nav__items__logo__drop">
                         <div class="nav__items__logo__drop__link">
-                            <a href="mastering/"><img class="nav__items__logo__drop__link__image" src="<?= get_template_directory_uri() ?>/assets/images/heightlogowhite.png" alt="height sonics logo" /></a>
+                            <a href="mastering/"><img class="nav__items__logo__drop__link__image" src="<?= get_template_directory_uri() ?>/assets/images/mastering.svg" alt="height sonics logo" /></a>
                         </div>
                     </div>
                 </div>
@@ -28,8 +28,8 @@ global $woocommerce;
                 </a>
             <?php } else { ?>
                 <div class="nav__items__logo">
-                    <a href="mastering/" >
-                        <img class="nav__items__logo__image" src="<?= get_template_directory_uri() ?>/assets/images/heightlogowhite.png" alt="height sonics logo" />
+                    <a href="mastering/">
+                        <img class="nav__items__logo__image" src="<?= get_template_directory_uri() ?>/assets/images/mastering.svg" alt="height sonics logo" />
                     </a>
                     <div class="nav__items__logo__drop" style="padding-top: 43.5px;">
                         <div class="nav__items__logo__drop__link">
@@ -44,7 +44,7 @@ global $woocommerce;
                     TESTIMONIALS
                 </a>
                 <a href="#work" class="nav__items__links nicescroll">
-                    FEATURED WORK
+                    PREVIOUS COLLABORATIONS
                 </a>
                 <a href="#contact" class="nav__items__links nicescroll">
                     CONTACT

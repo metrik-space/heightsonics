@@ -74,7 +74,7 @@
       top: 0;
       right: 0;
 
-      @include respond(tab-port){
+      @include respond(tab-port) {
         width: 100%;
       }
     }
@@ -86,12 +86,10 @@
       position: absolute;
       top: 0;
       left: 0;
-      @include respond(tab-port){
+      @include respond(tab-port) {
         display: none;
       }
-
     }
-
 
     &__content {
       display: flex;
@@ -100,10 +98,9 @@
       align-items: center;
       flex-wrap: wrap;
 
-      @include respond(tab-port){
+      @include respond(tab-port) {
         flex-direction: column;
       }
-
 
       &__text {
         width: 57.5%;
@@ -304,7 +301,6 @@
         &:hover {
           box-shadow: 0 1rem 2rem rgba(#ffffff20, 0.1);
           transform: scale(1.02);
-
         }
       }
 
@@ -410,7 +406,7 @@
           margin-bottom: 2rem;
           background: #000;
           color: #fff;
-          font-family: 'Montserrat', sans-serif;
+          font-family: 'SequalSans', sans-serif;
 
           &::placeholder {
             color: $color-white;
@@ -436,7 +432,7 @@
           border: 2px solid $color-white;
           background: #000;
           color: #fff;
-          font-family: 'Montserrat', sans-serif;
+          font-family: 'SequalSans', sans-serif;
 
           &::placeholder {
             color: $color-white;

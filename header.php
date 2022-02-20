@@ -20,6 +20,8 @@
 
 	<link href="https://www.dafontfree.net/embed/YWR1bXUtcmVndWxhciZkYXRhLzkwL2EvMTY2ODA3L0FkdW11LnR0Zg" rel="stylesheet" type="text/css" />
 
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 	<?php wp_head(); ?>
 </head>
 

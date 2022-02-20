@@ -11,8 +11,8 @@
   min-height: 0;
 }
 
-
-.woocommerce div.product p.price, .woocommerce div.product span.price {
+.woocommerce div.product p.price,
+.woocommerce div.product span.price {
   font-family: Adumu;
   font-style: normal;
   font-weight: normal;
@@ -24,19 +24,19 @@
 .woocommerce div.product form.cart .variations {
   display: flex;
   flex-direction: row;
-   align-items: flex-end;
-   flex-wrap: wrap;
+  align-items: flex-end;
+  flex-wrap: wrap;
 
   tbody {
     display: flex;
     width: 100%;
-     align-items: flex-end;
-     flex-wrap: wrap;
+    align-items: flex-end;
+    flex-wrap: wrap;
 
     tr {
       min-width: 168px;
 
-      @include respond(tab-port){
+      @include respond(tab-port) {
         margin-bottom: 2rem;
         width: 50%;
       }
@@ -47,7 +47,7 @@
         flex-direction: row;
 
         label {
-          font-family: Montserrat;
+          font-family: 'SequalSans', sans-serif;
           font-style: normal;
           font-weight: normal;
           font-size: 20px;
@@ -60,7 +60,7 @@
           width: 168px;
           height: 46px;
           padding-left: 8px;
-          font-family: Montserrat;
+          font-family: 'SequalSans', sans-serif;
           font-style: normal;
           font-weight: normal;
           font-size: 16px;
@@ -96,9 +96,9 @@
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
-    font-family: Montserrat;
-    align-items: flex-start;
-  @include respond(tab-port){
+  font-family: 'SequalSans', sans-serif;
+  align-items: flex-start;
+  @include respond(tab-port) {
     width: 100%;
   }
 }
@@ -111,15 +111,14 @@
   display: flex;
   align-items: flex-start;
 
-
   input {
     height: 100%;
     width: 100%;
     border-radius: 8px;
 
-      @include respond(tab-port){
-        margin-left: 0;
-  }
+    @include respond(tab-port) {
+      margin-left: 0;
+    }
   }
 }
 
@@ -127,7 +126,7 @@
   height: 100%;
   width: 70%;
   border-radius: 8px;
-  font-family: Montserrat;
+  font-family: 'SequalSans', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -157,7 +156,7 @@
 
 .reset_variations {
   color: #fff;
-  font-family: Montserrat;
+  font-family: 'SequalSans', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px !important;
@@ -169,10 +168,8 @@
   }
 }
 
-
-
 .woocommerce-notices-wrapper {
-position: absolute;
+  position: absolute;
   width: 60%;
   margin: auto;
   left: 20%;
@@ -200,13 +197,13 @@ position: absolute;
       display: none;
     }
   }
-
 }
 
-.woocommerce-error::before, .woocommerce-info::before, .woocommerce-message::before {
+.woocommerce-error::before,
+.woocommerce-info::before,
+.woocommerce-message::before {
   visibility: hidden;
 }
-
 
 .addToCart {
   display: flex;
@@ -224,8 +221,8 @@ position: absolute;
     line-height: 120%;
 
     @include respond(tab-port) {
-     margin-bottom: 0rem;
-     font-size: 14px;
+      margin-bottom: 0rem;
+      font-size: 14px;
     }
   }
 
@@ -245,7 +242,7 @@ position: absolute;
     @include respond(tab-port) {
       padding: 4px 8px;
       font-size: 14px;
-     }
+    }
 
     &:hover {
       background-color: #252525;
@@ -254,9 +251,6 @@ position: absolute;
     }
   }
 }
-
-
-
 
 .woocommerce-variation-description {
   font-style: normal;

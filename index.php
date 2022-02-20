@@ -21,15 +21,15 @@ get_header(); ?>
   <div class="landing">
     <div id="particles-js-landing" class="particles-js"></div>
     <div class="landing__content">
-      <img class="landing__content__logo" src="<?=get_template_directory_uri()?>/assets/images/heightsonicslogo.png" alt="Height Mastering logo">
+      <img data-aos="fade-up" data-aos-duration="1000" class="landing__content__logo" src="<?= get_template_directory_uri() ?>/assets/images/heightsonicslogo.png" alt="Height Mastering logo">
       <div class="landing__content__buttons">
-        <a href="shop/">
-          <div class="landing__content__buttons__bg" style="background-image: url(<?=get_template_directory_uri()?>/assets/images/heightbgcol.jpg)"></div>
-          <img class="landing__content__buttons__logo" src="<?=get_template_directory_uri()?>/assets/images/heightsampleslogo.png" alt="Height Mastering logo">
+        <a href="shop/" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+          <div class="landing__content__buttons__bg" style="background-image: url(<?= get_template_directory_uri() ?>/assets/images/heightbgcol.jpg)"></div>
+          <img class="landing__content__buttons__logo" src="<?= get_template_directory_uri() ?>/assets/images/heightsampleslogo.png" alt="Height Mastering logo">
         </a>
-        <a href="mastering/" style="background-image: url(<?=get_template_directory_uri()?>/assets/images/heightbg.jpg)">
-          <div class="landing__content__buttons__bg" style="background-image: url(<?=get_template_directory_uri()?>/assets/images/heightbg.jpg)"></div>
-          <img class="landing__content__buttons__logo" src="<?=get_template_directory_uri()?>/assets/images/heightlogowhite.png" alt="Height Mastering logo">
+        <a href="mastering/" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" style="background-image: url(<?= get_template_directory_uri() ?>/assets/images/heightbg.jpg)">
+          <div class="landing__content__buttons__bg" style="background-image: url(<?= get_template_directory_uri() ?>/assets/images/heightbg.jpg)"></div>
+          <img class="landing__content__buttons__logo" src="<?= get_template_directory_uri() ?>/assets/images/heightlogowhite.png" alt="Height Mastering logo">
         </a>
       </div>
     </div>

@@ -36,9 +36,10 @@ get_header(); ?>
                 <div class="mastering__about__content">
                     <img data-aos="zoom-in" data-aos-duration="1000" class="mastering__about__content__image" src="<?= get_template_directory_uri() ?>/assets/images/portImage.png" alt="">
                     <div class="mastering__about__content__text" data-aos="fade-up" data-aos-duration="1000">
-                        <h1>Production Made Simple</h1>
+                        <h1>Height Mastering</h1>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Height Mastering was formed in 2019 by music producer Haden White. Height was launched with the purpose of providing exceptional audio mastering with a ‘no nonsense’, personable experience for artists and record labels, big or small. 
+                            At it’s core, Height Mastering’s main goal is to enhance the relationship between the audio engineer and the artist. This focus, paired with a modern day technical approach, has been the preferred working method of Height since its conception. 
                         </p>
                     </div>
                 </div>

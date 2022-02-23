@@ -44,7 +44,7 @@ if (strpos($_SERVER['REQUEST_URI'], 'shop')) {
                             <a href="#about" class="mobNavLink">
                                 ABOUT
                             </a>
-                            <a href="<?= get_template_directory_uri() ?>mastering/">
+                            <a href="mastering/">
                                 HEIGHT MASTERING
                             </a>
                         <?php } else if (strpos($_SERVER['REQUEST_URI'], 'mastering')) { ?>
@@ -60,7 +60,7 @@ if (strpos($_SERVER['REQUEST_URI'], 'shop')) {
                             <a href="#contact" class="mobNavLink">
                                     CONTACT
                                 </a>
-                                <a href="<?= get_template_directory_uri() ?>shop/">
+                                <a href="shop/">
                                     HEIGHT SAMPLES
                                 </a>
                             

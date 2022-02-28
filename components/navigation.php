@@ -44,7 +44,7 @@ global $woocommerce;
                     TESTIMONIALS
                 </a>
                 <a href="#work" class="nav__items__links nicescroll">
-                    PREVIOUS COLLABORATIONS
+                    CLIENT FOCUS
                 </a>
                 <a href="#contact" class="nav__items__links nicescroll">
                     CONTACT

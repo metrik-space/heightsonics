@@ -120,7 +120,7 @@ get_header(); ?>
         <div id="work" class="mastering__featured-work">
             <div class="mastering__container">
                 <h1 data-aos="fade-up" data-aos-duration="1000">
-                    Featured Clients
+                    Client Focus
                 </h1>
                 <div class="mastering__featured-work__cont" data-aos="fade-up" data-aos-duration="1000">
                     <div class="mastering__featured-work__cont__item">

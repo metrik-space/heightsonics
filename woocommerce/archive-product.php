@@ -66,9 +66,15 @@ get_header();
 				<div class="shop__about__content">
 					<img class="shop__about__content__image" src="<?= get_template_directory_uri() ?>/assets/images/portImage.png" alt="" data-aos="zoom-in" data-aos-duration="1000">
 					<div class="shop__about__content__text" data-aos="fade-up" data-aos-duration="1000">
-						<h1>Production Made Simple</h1>
+						<h1>Height Samples</h1>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+							In an age where music is more and more disposable by the day, we believe it is crucial to separate yourself and your craft from the rest. In order to do this you must trust the tools you are using. 
+						</p>
+						<p>
+							Height Samples deliver nothing but high quality resources for music production at all levels, whether it be samples, synth presets or tutorials. 
+						</p>
+						<p>
+							We appreciate your support, now go and make some music!
 						</p>
 					</div>
 				</div>

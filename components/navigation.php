@@ -12,7 +12,7 @@ global $woocommerce;
                     </a>
                     <div class="nav__items__logo__drop">
                         <div class="nav__items__logo__drop__link">
-                            <a href="mastering/"><img class="nav__items__logo__drop__link__image" src="<?= get_template_directory_uri() ?>/assets/images/mastering.svg" alt="height sonics logo" /></a>
+                            <a href="mastering/"><img class="nav__items__logo__drop__link__image" src="<?= get_template_directory_uri() ?>/assets/images/heightlogowhite.png" alt="height sonics logo" /></a>
                         </div>
                     </div>
                 </div>
@@ -29,7 +29,7 @@ global $woocommerce;
             <?php } else { ?>
                 <div class="nav__items__logo">
                     <a href="mastering/">
-                        <img class="nav__items__logo__image" src="<?= get_template_directory_uri() ?>/assets/images/mastering.svg" alt="height sonics logo" />
+                        <img class="nav__items__logo__image" src="<?= get_template_directory_uri() ?>/assets/images/heightlogowhite.png" alt="height sonics logo" />
                     </a>
                     <div class="nav__items__logo__drop" style="padding-top: 43.5px;">
                         <div class="nav__items__logo__drop__link">

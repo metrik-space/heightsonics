@@ -16,7 +16,7 @@ get_header(); ?>
         </video>
         <div class="hero2__cont">
             <div data-aos="fade-up" data-aos-duration="1000" class="hero2__cont__logo">
-                <img src="<?= get_template_directory_uri() ?>/assets/images/mastering.svg" alt="Height Mastering logo">
+                <img src="<?= get_template_directory_uri() ?>/assets/images/heightlogowhite.png" alt="Height Mastering logo">
             </div>
         </div>
         <div class="hero2__arrow bounce">
@@ -39,6 +39,8 @@ get_header(); ?>
                         <h1>Height Mastering</h1>
                         <p>
                             Height Mastering was formed in 2019 by music producer Haden White. Height was launched with the purpose of providing exceptional audio mastering with a ‘no nonsense’, personable experience for artists and record labels, big or small. 
+                        </p>
+                        <p>
                             At it’s core, Height Mastering’s main goal is to enhance the relationship between the audio engineer and the artist. This focus, paired with a modern day technical approach, has been the preferred working method of Height since its conception. 
                         </p>
                     </div>
@@ -62,7 +64,7 @@ get_header(); ?>
 
                     <div class="mastering__testi__items__item">
                         <h3>
-                            Molecula
+                            Molecular
                         </h3>
                         <p>
                             'Highly recommended - whenever I'm asked about a good mastering service I instantly think of Haden at Height Mastering. Clean, loud and clear, and a fast service. I've had many tracks mastered by Haden already and can't complain of any, and I'm picky when it comes to masters.''
@@ -102,7 +104,15 @@ get_header(); ?>
                             'Working with Height Mastering is like working with a friend. The professionalism and care taken, combined with his ear for detail and the love for music and the craft gives us as a label the possibility to get our music to that next level. He’s always there with advice where needed to get the maximum out of every release. We would definitely recommend his services.'
                         </p>
                     </div>
-
+                    <div class="mastering__testi__items__item">
+                        <h3>
+                            Ant TC1 (Dispatch Recordings)
+                        </h3>
+                        <p>
+                            'Been really impressed with Height Mastering work for the label, real crisp rounded work on each track and across releases. The skill level and attention to detail is very much apparent, I’ve had little in the way of any amendments requested post mastering too, so a great first time strike rate results wise.'
+                        </p>
+                    </div>
+                    
                 </div>
             </div>
             <div id="particles-js2" class="particles-js"></div>
@@ -110,20 +120,20 @@ get_header(); ?>
         <div id="work" class="mastering__featured-work">
             <div class="mastering__container">
                 <h1 data-aos="fade-up" data-aos-duration="1000">
-                    Previous Collaborations
+                    Featured Clients
                 </h1>
                 <div class="mastering__featured-work__cont" data-aos="fade-up" data-aos-duration="1000">
                     <div class="mastering__featured-work__cont__item">
-                        <img src="<?= get_template_directory_uri() . '/assets/images/ekou.jpeg' ?>">
+                        <img src="<?= get_template_directory_uri() . '/assets/images/midasLogo.jpg' ?>">
+                    </div>
+                    <div class="mastering__featured-work__cont__item" style="background-color: #fff;">
+                        <img src="<?= get_template_directory_uri() . '/assets/images/dispatchlogo.png' ?>">
                     </div>
                     <div class="mastering__featured-work__cont__item">
-                        <img src="<?= get_template_directory_uri() . '/assets/images/ekou.jpeg' ?>">
+                        <img src="<?= get_template_directory_uri() . '/assets/images/amossLogo.png' ?>">
                     </div>
                     <div class="mastering__featured-work__cont__item">
-                        <img src="<?= get_template_directory_uri() . '/assets/images/ekou.jpeg' ?>">
-                    </div>
-                    <div class="mastering__featured-work__cont__item">
-                        <img src="<?= get_template_directory_uri() . '/assets/images/ekou.jpeg' ?>">
+                        <img src="<?= get_template_directory_uri() . '/assets/images/rebelLogo.png' ?>">
                     </div>
                 </div>
             </div>
@@ -149,9 +159,7 @@ get_header(); ?>
                         </div>
                         <input type="submit" value="SUBMIT" class="btn">
                     </form>
-                    <div class="mastering__contact__maps">
-                        <img src="<?= get_template_directory_uri() ?>/assets/images/capture.png" alt="">
-                    </div>
+                    
                 </div>
                 <div class="mastering__contact__pageButtons" data-aos="fade-up" data-aos-duration="1000">
                     <a href="shop/">

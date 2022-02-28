@@ -121,6 +121,7 @@
           width: 100%;
           line-height: 1.4;
           font-weight: 100;
+          margin-bottom: 1rem;
 
           @include respond(tab-port) {
             width: 100%;
@@ -277,6 +278,10 @@
         overflow: hidden;
         cursor: pointer;
         transition: $animation;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #151511;
 
         @include respond(tab-port) {
           width: 19%;
@@ -411,7 +416,7 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
 
       @include respond(tab-port) {
         justify-content: center;
@@ -419,7 +424,7 @@
     }
 
     &__form {
-      width: 45%;
+      width: 55%;
       z-index: 999999;
       position: relative;
 

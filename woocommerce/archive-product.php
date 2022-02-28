@@ -96,9 +96,6 @@ get_header();
 						</div>
 						<input type="submit" value="SUBMIT" class="btn-reverse">
 					</form>
-					<div class="shop__contactdark__maps">
-						<img src="<?= get_template_directory_uri() ?>/assets/images/capture.png" alt="">
-					</div>
 				</div>
 				<div class="shop__contactdark__pageButtons" data-aos="fade-up" data-aos-duration="1000">
 					<a href="shop/">

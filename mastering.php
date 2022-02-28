@@ -127,7 +127,7 @@ get_header(); ?>
                         <img src="<?= get_template_directory_uri() . '/assets/images/midasLogo.jpg' ?>">
                     </div>
                     <div class="mastering__featured-work__cont__item" style="background-color: #fff;">
-                        <img src="<?= get_template_directory_uri() . '/assets/images/dispatchlogo.png' ?>">
+                        <img src="<?= get_template_directory_uri() . '/assets/images/dispatchLogo.png' ?>">
                     </div>
                     <div class="mastering__featured-work__cont__item">
                         <img src="<?= get_template_directory_uri() . '/assets/images/amossLogo.png' ?>">

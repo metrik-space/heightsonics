@@ -26,6 +26,7 @@ function metrik_includes()
 	wp_enqueue_script('slick', get_template_directory_uri() . '/assets/js/vendor/slick.min.js', ['jquery'], true);
 
 	wp_enqueue_script('particlesJS', 'https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js');
+
 }
 add_action('wp_enqueue_scripts', 'metrik_includes', 20);
 

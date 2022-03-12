@@ -34,7 +34,7 @@ get_header(); ?>
             </div>
             <div class="mastering__container" style="display:flex; align-items: center;">
                 <div class="mastering__about__content">
-                    <img data-aos="zoom-in" data-aos-duration="1000" class="mastering__about__content__image" src="<?= get_template_directory_uri() ?>/assets/images/portImage.png" alt="">
+                    <img data-aos="zoom-in" data-aos-duration="1000" class="mastering__about__content__image" src="<?= get_template_directory_uri() ?>/assets/images/revanPress.jpg" alt="Revan press shot">
                     <div class="mastering__about__content__text" data-aos="fade-up" data-aos-duration="1000">
                         <h1>Height Mastering</h1>
                         <p>

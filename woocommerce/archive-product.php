@@ -64,7 +64,10 @@ get_header();
 			</div>
 			<div class="shop__container" style="display:flex; align-items: center;">
 				<div class="shop__about__content">
-					<img class="shop__about__content__image" src="<?= get_template_directory_uri() ?>/assets/images/portImage.png" alt="" data-aos="zoom-in" data-aos-duration="1000">
+					<!-- <img class="shop__about__content__image" src="<?= get_template_directory_uri() ?>/assets/images/portImage.png" alt="" data-aos="zoom-in" data-aos-duration="1000"> -->
+					<div class="shop__about__content__image">
+
+					</div>
 					<div class="shop__about__content__text" data-aos="fade-up" data-aos-duration="1000">
 						<h1>Height Samples</h1>
 						<p>

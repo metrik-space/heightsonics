@@ -140,10 +140,12 @@
         height: auto;
         max-height: 500px;
         z-index: 9999999;
+        border: 1px solid #fff;
 
         @include respond(tab-port) {
           margin-bottom: 2.5rem;
-          width: 60%;
+          width: 70%;
+          max-width: 700px;
         }
       }
     }
@@ -272,7 +274,7 @@
 
       &__item {
         width: 22%;
-        height: auto;
+        height: 220px;
         border: 2px solid $color-white;
         z-index: 999;
         overflow: hidden;
@@ -285,6 +287,7 @@
 
         @include respond(tab-port) {
           width: 19%;
+          height: 152px;
         }
 
         @include respond(phone) {

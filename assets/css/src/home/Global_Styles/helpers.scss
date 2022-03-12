@@ -124,16 +124,15 @@
     &__logo {
       display: flex;
       flex-direction: column;
-      width: 562px;
+      width: 552px;
 
       @include respond(tab-land) {
-        width: 80%;
+        width: 70%;
       }
 
       img {
         width: 100%;
         height: auto;
-        margin-top: 5rem;
       }
     }
   }
@@ -197,16 +196,15 @@
     &__logo {
       display: flex;
       flex-direction: column;
-      width: 562px;
+      width: 552px;
 
       @include respond(tab-land) {
-        width: 80%;
+        width: 70%;
       }
 
       img {
         width: 100%;
         height: auto;
-        margin-top: 5rem;
       }
     }
   }

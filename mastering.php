@@ -7,7 +7,7 @@ get_header(); ?>
     <?php include 'components/navigation.php'; ?>
     <?php include get_template_directory() . '/components/mobileNavigation.php'; ?>
     <div class="hero2">
-        <video autoplay muted loop playsinline width="100%" height="100vh" poster="<?= get_template_directory_uri() ?>/assets/images/heightbg.jpg' ?>">
+        <video playsinline muted mute autoplay loop width="100%" height="100vh" poster="<?= get_template_directory_uri() ?>/assets/images/heightbg.jpg' ?>">
 
             <source src="<?= get_template_directory_uri() . '/assets/videos/heightmasteringVid-c.mp4' ?>" type="video/mp4">
             <source src="<?= get_template_directory_uri() . '/assets/videos/heightmasteringVid-c.webm' ?>" type="video/webm">
@@ -15,7 +15,7 @@ get_header(); ?>
             Sorry, your browser doesn't support embedded videos.
         </video>
         <div class="hero2__cont">
-            <div data-aos="fade-up" data-aos-duration="1000" class="hero2__cont__logo">
+            <div data-aos="fade-up" data-aos-duration="1000" class="hero2__cont__logo" data-aos-once="true">
                 <img src="<?= get_template_directory_uri() ?>/assets/images/heightlogowhite.png" alt="Height Mastering logo">
             </div>
         </div>
@@ -29,31 +29,59 @@ get_header(); ?>
             <div class="mastering__about__left">
                 <div id="particles-js-mastering-about" class="particles-js"></div>
             </div>
-            <div class="mastering__about__right">
-                <div id="particles-js" class="particles-js"></div>
+            <div class="mastering__about__right" style="background-image: url('<?= get_template_directory_uri() ?>/assets/images/revanPress.jpg')">
+                <!-- <div id="particles-js" class="particles-js"></div> -->
             </div>
             <div class="mastering__container" style="display:flex; align-items: center;">
                 <div class="mastering__about__content">
-                    <img data-aos="zoom-in" data-aos-duration="1000" class="mastering__about__content__image" src="<?= get_template_directory_uri() ?>/assets/images/revanPress.jpg" alt="Revan press shot">
-                    <div class="mastering__about__content__text" data-aos="fade-up" data-aos-duration="1000">
-                        <h1>Height Mastering</h1>
+                    <!-- <img data-aos="zoom-in" data-aos-duration="1000" class="mastering__about__content__image" src="<?= get_template_directory_uri() ?>/assets/images/revanPress.jpg" alt="Revan press shot"> -->
+                    <div class="mastering__about__content__text" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                        <h1>Height<br />Mastering</h1>
                         <p>
-                            Height Mastering was formed in 2019 by music producer Haden White. Height was launched with the purpose of providing exceptional audio mastering with a ‘no nonsense’, personable experience for artists and record labels, big or small. 
+                            Height Mastering was formed in 2019 by music producer Haden White. Height was launched with the purpose of providing exceptional audio mastering with a ‘no nonsense’, personable experience for artists and record labels, big or small.
                         </p>
                         <p>
-                            At it’s core, Height Mastering’s main goal is to enhance the relationship between the audio engineer and the artist. This focus, paired with a modern day technical approach, has been the preferred working method of Height since its conception. 
+                            At it’s core, Height Mastering’s main goal is to enhance the relationship between the audio engineer and the artist. This focus, paired with a modern day technical approach, has been the preferred working method of Height since its conception.
                         </p>
+                        <a href="#contact">Get In Touch</a>
                     </div>
                 </div>
             </div>
         </div>
 
+        <div id="work" class="mastering__featured-work">
+            <div class="mastering__container">
+                <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                    Client Focus
+                </h1>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                    We have worked with a variety of exciting clientele. See below for some examples of the different brands that we have worked with:
+                </p>
+                <div class="mastering__featured-work__cont" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                    <div class="mastering__featured-work__cont__item">
+                        <img src="<?= get_template_directory_uri() . '/assets/images/midasLogo.jpg' ?>">
+                    </div>
+                    <div class="mastering__featured-work__cont__item" style="background-color: #fff;">
+                        <img src="<?= get_template_directory_uri() . '/assets/images/dispatchLogo.png' ?>">
+                    </div>
+                    <div class="mastering__featured-work__cont__item">
+                        <img src="<?= get_template_directory_uri() . '/assets/images/amossLogo.png' ?>">
+                    </div>
+                    <div class="mastering__featured-work__cont__item">
+                        <img src="<?= get_template_directory_uri() . '/assets/images/rebelLogo.png' ?>">
+                    </div>
+                </div>
+            </div>
+            <div id="particles-js4" class="particles-js"></div>
+        </div>
+
         <div class="mastering__container">
             <div id="testimonials" class="mastering__testi">
-                <h1 data-aos="fade-up" data-aos-duration="1000">
+                <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
                     Testimonials
                 </h1>
-                <div class=" mastering__testi__items" id="multiple-items" data-aos="fade-up" data-aos-duration="1000">
+                <p class="mastering__testi__text-left" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Can't decide whether or not to work with us? See what our previous clients thoughts below:</p>
+                <div class=" mastering__testi__items" id="multiple-items" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
 
                     <div class="mastering__testi__items__item">
                         <h3>Rebel Music</h3>
@@ -112,56 +140,22 @@ get_header(); ?>
                             'Been really impressed with Height Mastering work for the label, real crisp rounded work on each track and across releases. The skill level and attention to detail is very much apparent, I’ve had little in the way of any amendments requested post mastering too, so a great first time strike rate results wise.'
                         </p>
                     </div>
-                    
+
                 </div>
             </div>
             <div id="particles-js2" class="particles-js"></div>
         </div>
-        <div id="work" class="mastering__featured-work">
-            <div class="mastering__container">
-                <h1 data-aos="fade-up" data-aos-duration="1000">
-                    Client Focus
-                </h1>
-                <div class="mastering__featured-work__cont" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="mastering__featured-work__cont__item">
-                        <img src="<?= get_template_directory_uri() . '/assets/images/midasLogo.jpg' ?>">
-                    </div>
-                    <div class="mastering__featured-work__cont__item" style="background-color: #fff;">
-                        <img src="<?= get_template_directory_uri() . '/assets/images/dispatchLogo.png' ?>">
-                    </div>
-                    <div class="mastering__featured-work__cont__item">
-                        <img src="<?= get_template_directory_uri() . '/assets/images/amossLogo.png' ?>">
-                    </div>
-                    <div class="mastering__featured-work__cont__item">
-                        <img src="<?= get_template_directory_uri() . '/assets/images/rebelLogo.png' ?>">
-                    </div>
-                </div>
-            </div>
-            <div id="particles-js4" class="particles-js"></div>
-        </div>
         <div class="mastering__contact">
             <div id="particles-js3" class="particles-js"></div>
             <div class="mastering__container" id="contact">
-                <h1 data-aos="fade-up" data-aos-duration="1000">Get In Contact</h1>
+                <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Get In Touch</h1>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Have a project that you would like to discuss? Pop us a message below,</p>
                 <div class="mastering__contact__formCont">
                     <form action="" class="mastering__contact__form">
-                        <div class="mastering__contact__form__input">
-                            <label for="name">Name</label>
-                            <input name="name" type="text" placeholder="Name" required />
-                        </div>
-                        <div class="mastering__contact__form__input">
-                            <label for="email">Email</label>
-                            <input name="email" type="text" placeholder="Email" required />
-                        </div>
-                        <div class="mastering__contact__form__input">
-                            <label for="message">Message</label>
-                            <textarea name="message" id="" cols="30" rows="7" placeholder="Message..." required></textarea>
-                        </div>
-                        <input type="submit" value="SUBMIT" class="btn">
-                    </form>
-                    
+                        <?php echo (do_shortcode('[ninja_form id=1]')) ?>
+
                 </div>
-                <div class="mastering__contact__pageButtons" data-aos="fade-up" data-aos-duration="1000">
+                <div class="mastering__contact__pageButtons" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
                     <a href="shop/">
                         <div class="mastering__contact__pageButtons__bg" style="background-image: url(<?= get_template_directory_uri() ?>/assets/images/heightbgcol.jpg)"></div>
                         <img class="mastering__contact__pageButtons__logo" src="<?= get_template_directory_uri() ?>/assets/images/heightsampleslogo.png" alt="Height Mastering logo">
@@ -177,6 +171,7 @@ get_header(); ?>
                 </div>
             </div>
         </div>
+
 
     </div>
     <?php include 'components/footer.php'; ?>

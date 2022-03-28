@@ -36,8 +36,6 @@ $(function () {
   if (pathname.includes("shop")) {
     particlesJS.load('particles-js-sampleabout', '/wp-content/themes/height_sonics/assets/js/src/particles-samples.json', function () { });
 
-    particlesJS.load('particles-js-samples-about', '/wp-content/themes/height_sonics/assets/js/src/particles.json', function () { });
-
     particlesJS.load('particles-js-sampleshop', '/wp-content/themes/height_sonics/assets/js/src/particles-samples.json', function () { });
 
     particlesJS.load('particles-js-shopcontact', '/wp-content/themes/height_sonics/assets/js/src/particles-samples.json', function () { });
@@ -53,7 +51,7 @@ $(function () {
 
     particlesJS.load('particles-js2', '/wp-content/themes/height_sonics/assets/js/src/particles.json', function () { });
 
-    particlesJS.load('particles-js3', '/wp-content/themes/height_sonics/assets/js/src/particles.json', function () { });
+    particlesJS.load('particles-js3', '/wp-content/themes/height_sonics/assets/js/src/particles-white.json', function () { });
   } else {
     particlesJS.load('particles-js-landing', '/wp-content/themes/height_sonics/assets/js/src/particles-white.json', function () { });
   }
@@ -68,7 +66,7 @@ $(function () {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true,
+    arrows: false,
     dots: true,
     autoplay: true,
     autoplaySpeed: 12000,

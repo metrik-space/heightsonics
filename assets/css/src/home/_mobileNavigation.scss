@@ -11,11 +11,11 @@
   z-index: 9999999999;
   width: 100vw;
   padding: 2rem 1rem 1rem 1rem;
-  transition: ease .3s;
+  transition: ease 0.3s;
 
   @include respond(tab-port) {
     display: flex;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0, 0, 0, 0.3);
   }
   justify-content: center;
   align-items: center;
@@ -119,8 +119,6 @@
 
             &::before {
               top: -0.8rem;
-
-
             }
             &::after {
               top: 0.8rem;
@@ -171,8 +169,6 @@
             height: 100%;
             padding-top: 3rem;
 
-
-
             a {
               color: #fff;
               font-style: normal;
@@ -197,13 +193,12 @@
               justify-content: center;
               margin-top: 2.5rem;
 
-
               a {
                 background-repeat: no-repeat;
                 background-size: contain;
                 width: 48px;
                 height: 48px;
-                margin-right: 2rem;
+                margin: 0 2rem;
                 border: none;
               }
             }

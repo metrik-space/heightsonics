@@ -1,8 +1,17 @@
 <?php
 /* Template Name: mastering Page */
 
-get_header(); ?>
+get_header(); 
 
+
+
+?>
+  <meta charset="UTF-8">
+  <title>Height Mastering</title>
+  <meta name="description" content="Bristol based music mastering company founded by H.White (Ill Truth / Revan)">
+  <meta name="keywords" content="Music Mastering, Bristol Music Services, Height sonics">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 <main id="primary" class="site-main">
     <?php include 'components/navigation.php'; ?>
     <?php include get_template_directory() . '/components/mobileNavigation.php'; ?>
@@ -38,10 +47,10 @@ get_header(); ?>
                     <div class="mastering__about__content__text" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
                         <h1>Height<br />Mastering</h1>
                         <p>
-                            Height Mastering was formed in 2019 by music producer Haden White. Height was launched with the purpose of providing exceptional audio mastering with a ‘no nonsense’, personable experience for artists and record labels, big or small.
+                            <?= the_field('height_about_para_1') ?>
                         </p>
                         <p>
-                            At it’s core, Height Mastering’s main goal is to enhance the relationship between the audio engineer and the artist. This focus, paired with a modern day technical approach, has been the preferred working method of Height since its conception.
+                            <?= the_field('height_about_para_2') ?>
                         </p>
                         <a href="#contact">Get In Touch</a>
                     </div>
@@ -95,7 +104,7 @@ get_header(); ?>
                             Molecular
                         </h3>
                         <p>
-                            'Highly recommended - whenever I'm asked about a good mastering service I instantly think of Haden at Height Mastering. Clean, loud and clear, and a fast service. I've had many tracks mastered by Haden already and can't complain of any, and I'm picky when it comes to masters.''
+                            'Highly recommended - whenever I'm asked about a good mastering service I instantly think of Haden at Height Mastering. Clean, loud and clear, and a fast service. I've had many tracks mastered by Haden already and can't complain of any, and I'm picky when it comes to masters.'
                         </p>
                     </div>
 

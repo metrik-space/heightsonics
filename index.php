@@ -15,6 +15,11 @@
 
 get_header(); ?>
 
+  <meta charset="UTF-8">
+  <title>Height Sonics</title>
+  <meta name="description" content="Bristol based music mastering company founded by H.White (Ill Truth / Revan)">
+  <meta name="keywords" content="Music Mastering, Bristol Music Services, Height sonics">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <main id="primary">

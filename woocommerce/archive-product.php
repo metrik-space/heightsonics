@@ -3,6 +3,12 @@ global $product;
 $root = (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . '/';
 get_header();
 ?>
+  <meta charset="UTF-8">
+  <title>Height Samples</title>
+  <meta name="description" content="Tools for Creatives. Focused on aiding music producers hone their craft through high quality samples, presets and tutorials.">
+  <meta name="keywords" content="Sample packs, Bristol Music Services, Height Samples">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
 
 <main id="primary" class="site-main">
@@ -39,13 +45,13 @@ get_header();
 					<div class="shop__about__content__text" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
 						<h1>Height Samples</h1>
 						<p>
-							In an age where music is more and more disposable by the day, we believe it is crucial to separate yourself and your craft from the rest. In order to do this you must trust the tools you are using. 
+							<?= the_field('about_para_1') ?>
 						</p>
 						<p>
-							Height Samples deliver nothing but high quality resources for music production at all levels, whether it be samples, synth presets or tutorials. 
+							<?= the_field('about_para_2') ?>
 						</p>
 						<p>
-							We appreciate your support, now go and make some music!
+							<?= the_field('about_para_3') ?>
 						</p>
 						<a href="#contact">Get In Touch</a>
 					</div>

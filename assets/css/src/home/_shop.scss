@@ -308,8 +308,8 @@
       }
 
       @include respond(phone) {
-        width: 90%;
-        margin-left: 5%;
+        width: 95%;
+        margin-left: 2.5%;
       }
 
       &:hover {
@@ -356,7 +356,8 @@
           max-width: 90%;
 
           @include respond(tab-port) {
-            width: 80%;
+            width: 90%;
+            font-size: 18px;
           }
         }
 
@@ -371,7 +372,8 @@
           margin-top: 20px;
 
           @include respond(tab-port) {
-            width: 80%;
+            width: 90%;
+            font-size: 18px;
           }
         }
       }

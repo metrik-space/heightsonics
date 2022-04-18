@@ -39,19 +39,19 @@ get_header();
 			
 			<div class="shop__container" style="display:flex; align-items: center;">
 				<div class="shop__about__content">
-					<!-- <img class="shop__about__content__image" src="<?= get_template_directory_uri() ?>/assets/images/portImage.png" alt="" data-aos="zoom-in" data-aos-duration="1000"> -->
+					<!-- <img class="shop__about__content__image" src="/assets/images/portImage.png" alt="" data-aos="zoom-in" data-aos-duration="1000"> -->
 
 					</div>
 					<div class="shop__about__content__text" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
 						<h1>Height Samples</h1>
 						<p>
-							<?= the_field('about_para_1') ?>
+							In an age where music is more and more disposable by the day, we believe it is crucial to separate yourself and your craft from the rest. In order to do this you must trust the tools you are using. 
 						</p>
 						<p>
-							<?= the_field('about_para_2') ?>
+							Height Samples deliver nothing but high quality resources for music production at all levels, whether it be samples, synth presets or tutorials. 
 						</p>
 						<p>
-							<?= the_field('about_para_3') ?>
+							We appreciate your support, now go and make some music!
 						</p>
 						<a href="#contact">Get In Touch</a>
 					</div>
